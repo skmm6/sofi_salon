@@ -1,0 +1,209 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600;700&display=swap");
+*, :after, :before {
+  box-sizing: inherit;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*, :after, :before {
+  box-sizing: border-box;
+}
+
+a, a:focus, a:hover {
+  text-decoration: none;
+}
+
+.m-0 {
+  margin: 0;
+}
+
+.container {
+  max-width: 100%;
+}
+
+.container-fluid {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.header .nav .navbar {
+  justify-content: center;
+  align-items: center;
+}
+.header .nav .navbar .nav-menu {
+  width: 100%;
+  flex-grow: 5;
+  padding-left: 15px;
+  padding-right: 15px;
+  list-style: none;
+  flex-wrap: wrap;
+}
+.header .nav .navbar .nav-menu li {
+  margin-left: 15px;
+}
+.header .nav .navbar .nav-menu li a {
+  color: #282828;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 20px;
+  position: relative;
+  display: block;
+  text-align: left;
+  transition: 0.3s;
+  z-index: 1;
+  border-bottom: 2px solid #ffffff;
+}
+.header .nav .navbar .nav-menu li a:hover {
+  border-bottom: 2px solid #bb9151;
+}
+@media screen and (max-width: 1039px) {
+  .header .nav .navbar .nav-menu li a {
+    padding: 3px;
+    font-size: 10px;
+    letter-spacing: 0;
+  }
+}
+.header .nav .navbar .nav-menu .nav-menu__allblok {
+  display: inline-block;
+  position: relative;
+}
+.header .nav .navbar .nav-menu .nav-menu__allblok:hover .nav-menu__ani {
+  border-bottom: 2px solid #bb9151;
+}
+.header .nav .navbar .nav-menu .nav-menu__allblok .nav-menu__allbloks {
+  top: calc(100% + 10px);
+  min-width: 150px;
+  left: 0;
+  padding: 7px 0;
+  box-shadow: -1px 2px 5px rgba(0, 0, 0, 0.2);
+  background-color: #ffffff;
+  display: none;
+  position: absolute;
+  left: 0;
+  z-index: 500;
+}
+.header .nav .navbar .nav-menu .nav-menu__allblok .nav-menu__allbloks li {
+  list-style: none;
+}
+.header .nav .navbar .nav-menu .nav-menu__allblok .nav-menu__allbloks li a {
+  text-transform: none;
+  font-weight: 400;
+  font-style: normal;
+  text-align: left;
+  font-size: 12px;
+  line-height: 17px;
+  padding: 4px 10px;
+  transition: 0.3s;
+  z-index: 1;
+  border-bottom: none;
+}
+.header .nav .navbar .nav-menu .nav-menu__allblok .nav-menu__allbloks li a:hover {
+  color: #bb9151;
+  border-bottom: none;
+}
+@media screen and (max-width: 1039px) {
+  .header .nav .navbar .nav-menu .nav-menu__allblok .nav-menu__allbloks li a {
+    padding: 3px;
+    font-size: 10px;
+    letter-spacing: 0;
+  }
+}
+.header .nav .navbar .nav-menu .nav-menu__allblok:hover .nav-menu__allbloks {
+  display: block;
+}
+.header .nav .navbar .nav-menu .nav-menu__allblok:hover .nav-menu__allbloks::before {
+  position: absolute;
+  top: -14px;
+  height: 14px;
+  left: 0;
+  width: 100%;
+  content: "";
+}
+.header .nav-logo {
+  width: 100%;
+  flex-grow: 2;
+  padding: 15px 0;
+  max-width: 15%;
+}
+.header .nav-logo a {
+  text-align: center;
+  font-size: 70px;
+  color: #282828;
+}
+@media screen and (max-width: 1039px) {
+  .header .nav-logo a {
+    font-size: 50px;
+  }
+}
+.header .nav-end {
+  width: 100%;
+  flex-grow: 5;
+  padding-left: 15px;
+  padding-right: 15px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.header .nav-end .nav-contact li {
+  list-style: none;
+  margin-left: 30px;
+}
+.header .nav-end .nav-contact li a {
+  color: #282828;
+  font-size: inherit;
+  font-size: 18px;
+  transition: ease 0.3s;
+}
+.header .nav-end .nav-contact li a:hover {
+  color: #bb9151;
+}
+@media screen and (max-width: 1039px) {
+  .header .nav-end .nav-contact li {
+    margin-left: 8px;
+  }
+}
+.header .nav-end .nav-bnt {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.header .nav-end .nav-bnt a {
+  border: 2px solid #bb9151;
+  padding: 8px 10px;
+  min-width: 140px;
+  font-size: 12px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  color: #282828;
+  background-color: transparent;
+  text-transform: uppercase;
+  line-height: 20px;
+  text-align: center;
+  transition: ease 0.3s;
+  letter-spacing: 0.5px;
+}
+.header .nav-end .nav-bnt a:hover {
+  background-color: #bb9151;
+  color: #ffffff;
+}
+@media screen and (max-width: 1039px) {
+  .header .nav-end .nav-bnt a {
+    min-width: 90px;
+    font-size: 10px;
+    padding: 4px 6px;
+  }
+}

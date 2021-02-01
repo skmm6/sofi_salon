@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600;700&display=swap');
+*, :after, :before {
+    box-sizing: inherit;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+*, :after, :before {
+    box-sizing: border-box;
+}
+a, a:focus, a:hover {
+    text-decoration: none;
+}
+
+.m-0 {
+    margin: 0;
+}
+// color
+$primory: #bb9151 ;
+$textcolprim: #282828;
+$light: #ffffff;    
+
+
+
+//font-family
+$montse: 'Montserrat', sans-serif ;
+
+
+
+//container-teg
+.container {
+    max-width: 100%;
+}
+.container-fluid {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+//flex-box
+.d-flex {
+    display: flex;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+
+// HEADER
+
+.header {
+    .nav{ 
+        .navbar{
+            justify-content: center;
+            align-items: center;
+        .nav-menu {
+            width: 100%;
+            flex-grow: 5;
+            padding-left: 15px;
+            padding-right: 15px; 
+            list-style: none;
+            flex-wrap: wrap;
+            li {
+                margin-left: 15px;
+                
+                a{
+                    color: $textcolprim;
+                    font-family: $montse;
+                    font-weight: 500;
+                    font-style: normal;
+                    text-transform: uppercase; 
+                    font-size: 12px;
+                    line-height: 20px;
+                    position: relative;
+                    display: block;
+                    text-align: left;
+                    transition: .3s;
+                    z-index: 1;
+                    border-bottom: 2px solid $light;
+                    &:hover {
+                        border-bottom: 2px solid $primory;
+                    }
+                  
+                    
+                    @media screen and (max-width: 1039px) {
+                        padding: 3px;
+                        font-size: 10px;
+                        letter-spacing: 0;
+                    }
+                    
+                }
+            }
+            .nav-menu__allblok{
+                display: inline-block;
+                position: relative;
+                &:hover .nav-menu__ani {
+                    border-bottom: 2px solid $primory;
+                }
+
+              
+                .nav-menu__allbloks {
+                    top: calc(100% + 10px);
+                    min-width: 150px;
+                    left: 0;
+                    padding: 7px 0;
+                    box-shadow: -1px 2px 5px rgb(0 0 0 / 20%);
+                    background-color: $light;
+                    display: none;
+                    position: absolute;
+                    left: 0;
+                    z-index: 500;
+                    li {
+                        list-style: none;
+                        a{
+                            text-transform: none;
+                            font-weight: 400;
+                            font-style: normal;
+                            text-align: left;
+                            font-size: 12px;
+                            line-height: 17px;
+                            padding: 4px 10px;
+                            transition: .3s;
+                            z-index: 1;
+                            border-bottom: none;
+                            &:hover {
+                                color: $primory;
+                                border-bottom: none;
+                            }
+                            @media screen and (max-width: 1039px) {
+                                padding: 3px;
+                                font-size: 10px;
+                                letter-spacing: 0;
+                            }
+                        }
+                    }
+                }
+                &:hover .nav-menu__allbloks{
+                    display: block;
+                    &::before {
+                            position: absolute;
+                            top: -14px;
+                            height: 14px;
+                            left: 0;
+                            width: 100%;
+                            content: "";
+                    }
+              
+                }
+            }
+            
+        }
+        }
+    }
+
+
+
+    .nav-logo {
+        width: 100%;
+        flex-grow: 2;
+        padding: 15px 0; 
+        max-width: 15%;
+        a{
+            text-align: center;
+            font-size: 70px;
+            color: $textcolprim;
+            @media screen and (max-width: 1039px) {
+                font-size: 50px;
+             }
+        }
+        
+    }
+
+
+
+    .nav-end {
+        width: 100%;
+        flex-grow: 5;
+        padding-left: 15px;
+        padding-right: 15px ;
+        display: flex;
+        justify-content: space-evenly;
+
+
+
+        .nav-contact {
+            li {
+                list-style: none;
+                margin-left: 30px;
+                a {
+                    color: $textcolprim;
+                    font-size: inherit;
+                    font-size: 18px;
+                    transition: ease .3s;
+                    &:hover {
+                        color: $primory;
+                    }
+                }
+                @media screen and (max-width: 1039px) {
+                   margin-left: 8px;
+                }
+            }
+           
+        }
+
+        .nav-bnt {
+            padding-left: 15px;
+            padding-right: 15px;
+            a {
+                border: 2px solid $primory;
+                padding: 8px 10px;
+                min-width: 140px;
+                font-size: 12px;
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 500;
+                font-style: normal;
+                color: #282828;
+                background-color: transparent;
+                text-transform: uppercase;
+                line-height: 20px;
+                text-align: center;
+                transition: ease .3s;
+                letter-spacing: .5px;
+                &:hover {
+                    background-color: $primory;
+                    color: $light;
+                }
+                @media screen and (max-width: 1039px) {
+                            min-width: 90px;
+                            font-size: 10px;
+                            padding: 4px 6px;
+                        }
+            }
+        }
+    }
+}
+
