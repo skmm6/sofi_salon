@@ -123,6 +123,7 @@ $montse: 'Montserrat', sans-serif ;
                 box-sizing: border-box;
                 transition: 300ms ease;
                 z-index: 9999; 
+                margin: 0 10px;
             }
             
             .nav-menu__allblok{
@@ -277,6 +278,7 @@ $montse: 'Montserrat', sans-serif ;
         flex-grow: 2;
         padding: 15px 0; 
         max-width: 15%;
+        text-align: center;
         a{
             text-align: center;
             font-size: 70px;
@@ -376,12 +378,106 @@ $montse: 'Montserrat', sans-serif ;
                 
             }
             @media screen and (max-width: 695px) {
+                margin-bottom: 20px;
                 a {
                     font-size: 14px;
                     padding: 15px;
+                  
                 }
             }  
         }
     }
 }
+
+.bilbord {
+    padding: 5px 40px;
+    .bilbord-main {
+        background-image: url(../img/bilbord1_2.jpg) ;
+        height: 750px;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        .bilbord-main__flex {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            
+
+
+            .bilbord-main__yer{
+                padding: 15px 0;
+                font-weight: 700;
+                font-style: normal;
+                font-family: $montse;
+                color: $primory;
+                font-size: 21px;
+                line-height: 1.4;
+                letter-spacing: 3px;
+                text-transform: uppercase;
+        }
+        .bilbord-main__text {
+                    padding: 20px 0;
+                    font-weight: 600;
+                    font-style: normal;
+                    font-family: $montse;
+                    color: $light;
+                    font-size: 50px;
+                    line-height: 1.2;
+                    letter-spacing: 0px;
+                    // -webkit-text-stroke: .5px #000000;
+        }
+
+        .bilbord-main__btn {
+           padding: 20px 0;
+        a {
+            border: $primory 2px solid;
+            background-color: $primory;
+            color: $light;
+            padding: 20px;
+            min-width: 140px;
+            font-size: 14px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 500;
+            font-style: normal;
+            text-transform: uppercase;
+            line-height: 20px;
+            text-align: center;
+            transition: ease .3s;
+            letter-spacing: .5px;
+            
+            &:hover {
+                background-color: $light;
+                color: $primory;
+                border: $primory 2px solid;
+                
+            }
+            @media screen and (max-width: 1039px) {
+                        min-width: 90px;
+                        font-size: 10px;
+                        padding: 4px 6px;
+                    }
+            
+        }
+        @media screen and (max-width: 695px) {
+            margin-bottom: 20px;
+            a {
+                font-size: 14px;
+                padding: 15px;
+            
+            }
+        }  
+    }
+                            }
+                            
+
+
+
+        }
+        
+        
+}
+
 
