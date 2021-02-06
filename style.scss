@@ -48,6 +48,7 @@ $montse: 'Montserrat', sans-serif ;
     flex-direction: column;
 }
 
+// not print 
 
 // HEADER
 
@@ -56,6 +57,11 @@ $montse: 'Montserrat', sans-serif ;
         .navbar{
             justify-content: center;
             align-items: center;
+            @media screen and (max-width: 695px) {
+                flex-direction: column;
+               
+            }
+
         .nav-menu {
             width: 100%;
             flex-grow: 5;
@@ -82,6 +88,9 @@ $montse: 'Montserrat', sans-serif ;
                     border-bottom: 2px solid $light;
                     &:hover {
                         border-bottom: 2px solid $primory;
+                        @media screen and (max-width: 695px) {
+                            border-bottom: 2px solid $light;
+                        }
                     }
                   
                     
@@ -90,16 +99,62 @@ $montse: 'Montserrat', sans-serif ;
                         font-size: 10px;
                         letter-spacing: 0;
                     }
+                    @media screen and (max-width: 695px) {
+                        font-size: 20px;
+                        padding: 10px;
+                        &:hover {
+                            border-bottom: 2px solid $light;
+                        }
+                    }
+       
                     
                 }
             }
+            @media screen and (max-width: 695px) {
+                position: absolute;
+                top: -100%;
+                width: 100%;
+                max-width: 90%;
+                background-color: #fff;
+                /* box-shadow: rgba(0,0,0,.3) 0 0 15px; */
+                flex-direction: column;
+                align-items: stretch;
+                padding: 15px;
+                box-sizing: border-box;
+                transition: 300ms ease;
+                z-index: 9999; 
+            }
+            
             .nav-menu__allblok{
                 display: inline-block;
                 position: relative;
                 &:hover .nav-menu__ani {
                     border-bottom: 2px solid $primory;
+                    @media screen and (max-width: 695px) {
+                        border-bottom: 2px solid $light;
+                    }
                 }
+              
 
+                .nav-menu__ani {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    #nav-all__burger {
+                        display: none;
+                        width: 0.7em;
+                        height: 0.7em;
+                        border-top: 0.1em solid $textcolprim;
+                        border-right: .1em solid $textcolprim;
+                        margin-right: 0.7em;
+                        transform: rotate(135deg);
+                        margin-bottom: 0.35em;
+                        @media screen and (max-width: 695px) {
+                            display: inline-block;
+                            margin-left: auto;
+                        }
+                    }     
+                }
               
                 .nav-menu__allbloks {
                     top: calc(100% + 10px);
@@ -112,6 +167,13 @@ $montse: 'Montserrat', sans-serif ;
                     position: absolute;
                     left: 0;
                     z-index: 500;
+                    @media screen and (max-width: 695px) {
+                        min-width: 100%;
+                        box-shadow: none;
+                        position: initial;
+                        
+                    }
+                   
                     li {
                         list-style: none;
                         a{
@@ -134,11 +196,25 @@ $montse: 'Montserrat', sans-serif ;
                                 font-size: 10px;
                                 letter-spacing: 0;
                             }
+                            @media screen and (max-width: 695px) {
+                                font-size: 14px;
+                                margin-left: 15px;
+                            
+                            }
                         }
                     }
                 }
+                @media screen and (max-width: 695px) {
+                .nav-menu__allbloks.open {
+                    display: block !important ;
+                } }
+               
+         
+            
                 &:hover .nav-menu__allbloks{
                     display: block;
+                    
+                    
                     &::before {
                             position: absolute;
                             top: -14px;
@@ -149,9 +225,48 @@ $montse: 'Montserrat', sans-serif ;
                     }
               
                 }
+                @media screen and (max-width: 695px) {
+                    &:hover .nav-menu__allbloks{
+                        display: none;
+                    }
+                }
+               
+            
+                
+               
+
+             }
+            @media screen and (max-width: 695px) { 
+                border: 2px solid $primory;
+            }
+        }
+        @media screen and (max-width: 695px) {
+            .nav-menu.open {
+                box-shadow: rgba(0, 0, 0, .3) 0 0 15px;
+                top: 10%;
+        }
+        }
+     
+        }
+        #burger-menu {
+            margin: 15px 15px 15px 15px;
+            padding: 5px;
+            background-color: $textcolprim;
+            position: relative;
+            border: 0;
+            box-shadow: 0;
+            border-radius: 0; 
+            z-index: 9999;
+            display: none;
+            i{
+                color: $light;
+                font-size: 24px;
+                line-height: 40px;
+            }
+            @media screen and (max-width: 695px) {
+                display: block;
             }
             
-        }
         }
     }
 
@@ -169,6 +284,14 @@ $montse: 'Montserrat', sans-serif ;
             @media screen and (max-width: 1039px) {
                 font-size: 50px;
              }
+            
+        }
+        @media screen and (max-width: 695px) {
+            max-width: 100%;
+            text-align: center;
+            a {
+                font-size: 80px;
+            }
         }
         
     }
@@ -182,28 +305,46 @@ $montse: 'Montserrat', sans-serif ;
         padding-right: 15px ;
         display: flex;
         justify-content: space-evenly;
+        @media screen and (max-width: 695px) {
+            flex-direction: column;
+            align-items: center;
+        }   
 
 
 
         .nav-contact {
-            li {
-                list-style: none;
-                margin-left: 30px;
-                a {
-                    color: $textcolprim;
-                    font-size: inherit;
-                    font-size: 18px;
-                    transition: ease .3s;
-                    &:hover {
-                        color: $primory;
+           
+                li {    
+                    list-style: none;
+                    margin-left: 30px;
+                    a {
+                        color: $textcolprim;
+                        font-size: inherit;
+                        font-size: 20px;
+                        transition: ease .3s;
+                        &:hover {
+                            color: $primory;
+                        }
+                    }
+                    @media screen and (max-width: 1039px) {
+                       margin-left: 8px;
                     }
                 }
-                @media screen and (max-width: 1039px) {
-                   margin-left: 8px;
+            @media screen and (max-width: 695px) {
+                padding: 15px;
+              display: flex; 
+              justify-content: space-between;  
+              align-items: center;
+              margin-bottom: 20px;
+              li {
+                margin-left: 0;
+                a {
+                    font-size: 40px;
+                    padding: 15px;
                 }
-            }
-           
+              }  
         }
+    }
 
         .nav-bnt {
             padding-left: 15px;
@@ -232,7 +373,14 @@ $montse: 'Montserrat', sans-serif ;
                             font-size: 10px;
                             padding: 4px 6px;
                         }
+                
             }
+            @media screen and (max-width: 695px) {
+                a {
+                    font-size: 14px;
+                    padding: 15px;
+                }
+            }  
         }
     }
 }

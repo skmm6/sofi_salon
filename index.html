@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="dist/style.css">
-    <link rel="stylesheet" href="fontello-dd1c3cdb/css/fontello.css">
+    <link rel="stylesheet" href="fontello-604f9306/css/fontello.css">
 </head>
 <body>
     
@@ -14,14 +14,14 @@
 <section class="header container">
     <div class="nav">
         <div class="container-fluid navbar d-flex">
-            <ul class="nav-menu d-flex">
+            <ul class="nav-menu d-flex " id="main-menu">
                 <li class="m-0"><a href="">Главная</a></li>
                 <li><a class="nav-menu_bloks" href="">Услуги</a></li>
                 <li><a class="nav-menu_bloks" href="">Цены</a></li>
                 <li><a class="nav-menu_bloks" href="">Контакты</a></li>
                 <li class="nav-menu__allblok">
-                    <a class="nav-menu__ani" href="">Все блоки</a>
-                      <ul class="nav-menu__allbloks">
+                    <a class="nav-menu__ani">Все блоки <span id="nav-all__burger"></span></a>
+                      <ul class="nav-menu__allbloks" id="all-menu">
                         <li><a href="">О нас</a></li>
                         <li><a href="">Льготы</a></li>
                         <li><a href="">Услуги</a></li>
@@ -33,6 +33,9 @@
                     </ul>
                 </li>
             </ul>
+            <button id="burger-menu">
+               <i class="icon-menu"></i>
+            </button>
             <div class="nav-logo">
               <a href=""> Софи</a> 
             </div>
@@ -60,6 +63,9 @@
 
 
 
+
+
+<script src="js/script.js"></script>
 
 
 </body>
