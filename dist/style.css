@@ -50,7 +50,7 @@ a, a:focus, a:hover {
 .header .nav .navbar .nav-menu {
   width: 100%;
   flex-grow: 5;
-  padding-left: 15px;
+  padding-left: 0;
   padding-right: 15px;
   list-style: none;
   flex-wrap: wrap;
@@ -281,7 +281,7 @@ a, a:focus, a:hover {
   width: 100%;
   flex-grow: 5;
   padding-left: 15px;
-  padding-right: 15px;
+  padding-right: 0;
   display: flex;
   justify-content: space-evenly;
 }
