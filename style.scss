@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600;700&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
 *, :after, :before {
     box-sizing: inherit;
 }
@@ -398,6 +400,34 @@ $montse: 'Montserrat', sans-serif ;
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
+        // .salon {
+        //     position: absolute;
+        //     top: 20%;
+        //     left: 5%;
+        //     font-family: 'Great Vibes', cursive;
+        //     font-size: 5em;
+        //     color: $primory;
+        //     text-transform: uppercase;
+        //     opacity: .3 ;
+        //     letter-spacing: 0.3em;
+            
+        // }
+        // .sofi {
+        //     position: absolute;
+        //     bottom: 15%;
+        //     left: 5%;
+        //     font-family: 'Great Vibes', cursive;
+        //     font-size: 5em;
+        //     color: $primory;
+        //     text-transform: uppercase;
+        //     opacity: .3 ;
+        //     letter-spacing: 0.3em;
+            
+        // }
+        @media screen and (max-width: 695px) {
+            height:500px;
+            
+            }
         .bilbord-main__flex {
             height: 100%;
             display: flex;
@@ -417,9 +447,13 @@ $montse: 'Montserrat', sans-serif ;
                 line-height: 1.4;
                 letter-spacing: 3px;
                 text-transform: uppercase;
+                @media screen and (max-width: 695px) {
+                    font-size: 18px;
+                    
+                    }
         }
         .bilbord-main__text {
-                    padding: 20px 0;
+                    padding: 35px 0;
                     font-weight: 600;
                     font-style: normal;
                     font-family: $montse;
@@ -428,6 +462,10 @@ $montse: 'Montserrat', sans-serif ;
                     line-height: 1.2;
                     letter-spacing: 0px;
                     // -webkit-text-stroke: .5px #000000;
+                    @media screen and (max-width: 695px) {
+                        font-size: 25px;
+                        
+                        }
         }
 
         .bilbord-main__btn {
@@ -457,7 +495,7 @@ $montse: 'Montserrat', sans-serif ;
             @media screen and (max-width: 1039px) {
                         min-width: 90px;
                         font-size: 10px;
-                        padding: 4px 6px;
+                        padding: 15px;
                     }
             
         }
@@ -480,4 +518,96 @@ $montse: 'Montserrat', sans-serif ;
         
 }
 
+.aboutUs {
+    margin: 150px 0;
+        .aboutUs-main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+                                .aboutUs-main__yer {
+                                    padding: 5px 0;
+                                    font-weight: 700;
+                                    font-style: normal;
+                                    font-family: $montse;
+                                    color: $primory;
+                                    font-size: 18px;
+                                    line-height: 1.4;
+                                    letter-spacing: 3px;
+                                    text-transform: uppercase;
+                                    @media screen and (max-width: 695px) {
+                                        font-size: 16px;
+                                        
+                                        } 
+                                }
+                                .aboutUs-main__abaut {
+                                    font-weight: 700;
+                                    font-style: normal;
+                                    font-family: $montse;
+                                    color: $textcolprim;
+                                    font-size: 70px;
+                                    line-height: 1.2;
+                                    letter-spacing: 0px;
+                                    text-transform: uppercase ;
+                                    // -webkit-text-stroke: .5px #000000;
+                                    @media screen and (max-width: 695px) {
+                                        font-size: 25px;
+                                        
+                                        }
+                                }
+                                .aboutUs-main__text {
+                                    max-width: 70%;
+                                    padding: 15px 0;
+                                    font-weight: 500;
+                                    font-style: normal;
+                                    font-family: $montse;
+                                    color: $textcolprim;
+                                    font-size: 16px;
+                                    line-height: 1.5;
+                                    letter-spacing: 0px;
+                                    text-align: center;
+                                    // -webkit-text-stroke: .5px #000000;
+                                    @media screen and (max-width: 695px) {
+                                        font-size: 14px;
+                                        
+                                        }
+                                }
+                                .aboutUs-main__btn {
+                                    margin-top: 20px;
+                                    a {
+                                        border: 2px solid $primory;
+                                        padding: 20px;
+                                        min-width: 140px;
+                                        font-size: 14px;
+                                        font-family: 'Montserrat', sans-serif;
+                                        font-weight: 500;
+                                        font-style: normal;
+                                        color: #282828;
+                                        background-color: transparent;
+                                        text-transform: uppercase;
+                                        line-height: 20px;
+                                        text-align: center;
+                                        transition: ease .3s;
+                                        letter-spacing: .5px;
+                                        &:hover {
+                                            background-color: $primory;
+                                            color: $light;
+                                        }
+                                        @media screen and (max-width: 1039px) {
+                                                    min-width: 90px;
+                                                    font-size: 10px;
+                                                    padding: 20px;
+                                                }
+                                        
+                                    }
+                                    @media screen and (max-width: 695px) {
+                                        a {
+                                            font-size: 14px;
+                                            padding: 15px;
+                                          
+                                        }
+                                    }  
+                                }
+                                
+        }
+}
 

@@ -377,6 +377,11 @@ a, a:focus, a:hover {
   background-position: center;
   background-size: cover;
 }
+@media screen and (max-width: 695px) {
+  .bilbord .bilbord-main {
+    height: 500px;
+  }
+}
 .bilbord .bilbord-main .bilbord-main__flex {
   height: 100%;
   display: flex;
@@ -395,8 +400,13 @@ a, a:focus, a:hover {
   letter-spacing: 3px;
   text-transform: uppercase;
 }
+@media screen and (max-width: 695px) {
+  .bilbord .bilbord-main .bilbord-main__flex .bilbord-main__yer {
+    font-size: 18px;
+  }
+}
 .bilbord .bilbord-main .bilbord-main__flex .bilbord-main__text {
-  padding: 20px 0;
+  padding: 35px 0;
   font-weight: 600;
   font-style: normal;
   font-family: "Montserrat", sans-serif;
@@ -404,6 +414,11 @@ a, a:focus, a:hover {
   font-size: 50px;
   line-height: 1.2;
   letter-spacing: 0px;
+}
+@media screen and (max-width: 695px) {
+  .bilbord .bilbord-main .bilbord-main__flex .bilbord-main__text {
+    font-size: 25px;
+  }
 }
 .bilbord .bilbord-main .bilbord-main__flex .bilbord-main__btn {
   padding: 20px 0;
@@ -433,7 +448,7 @@ a, a:focus, a:hover {
   .bilbord .bilbord-main .bilbord-main__flex .bilbord-main__btn a {
     min-width: 90px;
     font-size: 10px;
-    padding: 4px 6px;
+    padding: 15px;
   }
 }
 @media screen and (max-width: 695px) {
@@ -441,6 +456,99 @@ a, a:focus, a:hover {
     margin-bottom: 20px;
   }
   .bilbord .bilbord-main .bilbord-main__flex .bilbord-main__btn a {
+    font-size: 14px;
+    padding: 15px;
+  }
+}
+
+.aboutUs {
+  margin: 150px 0;
+}
+.aboutUs .aboutUs-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.aboutUs .aboutUs-main .aboutUs-main__yer {
+  padding: 5px 0;
+  font-weight: 700;
+  font-style: normal;
+  font-family: "Montserrat", sans-serif;
+  color: #bb9151;
+  font-size: 18px;
+  line-height: 1.4;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+@media screen and (max-width: 695px) {
+  .aboutUs .aboutUs-main .aboutUs-main__yer {
+    font-size: 16px;
+  }
+}
+.aboutUs .aboutUs-main .aboutUs-main__abaut {
+  font-weight: 700;
+  font-style: normal;
+  font-family: "Montserrat", sans-serif;
+  color: #282828;
+  font-size: 70px;
+  line-height: 1.2;
+  letter-spacing: 0px;
+  text-transform: uppercase;
+}
+@media screen and (max-width: 695px) {
+  .aboutUs .aboutUs-main .aboutUs-main__abaut {
+    font-size: 25px;
+  }
+}
+.aboutUs .aboutUs-main .aboutUs-main__text {
+  max-width: 70%;
+  padding: 15px 0;
+  font-weight: 500;
+  font-style: normal;
+  font-family: "Montserrat", sans-serif;
+  color: #282828;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0px;
+  text-align: center;
+}
+@media screen and (max-width: 695px) {
+  .aboutUs .aboutUs-main .aboutUs-main__text {
+    font-size: 14px;
+  }
+}
+.aboutUs .aboutUs-main .aboutUs-main__btn {
+  margin-top: 20px;
+}
+.aboutUs .aboutUs-main .aboutUs-main__btn a {
+  border: 2px solid #bb9151;
+  padding: 20px;
+  min-width: 140px;
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  color: #282828;
+  background-color: transparent;
+  text-transform: uppercase;
+  line-height: 20px;
+  text-align: center;
+  transition: ease 0.3s;
+  letter-spacing: 0.5px;
+}
+.aboutUs .aboutUs-main .aboutUs-main__btn a:hover {
+  background-color: #bb9151;
+  color: #ffffff;
+}
+@media screen and (max-width: 1039px) {
+  .aboutUs .aboutUs-main .aboutUs-main__btn a {
+    min-width: 90px;
+    font-size: 10px;
+    padding: 20px;
+  }
+}
+@media screen and (max-width: 695px) {
+  .aboutUs .aboutUs-main .aboutUs-main__btn a {
     font-size: 14px;
     padding: 15px;
   }
