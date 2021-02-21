@@ -439,7 +439,8 @@
 }
 
 .aboutUs {
-    margin: 150px 0;
+    margin-top: 150px;
+    margin-bottom: 40px;
 
     .aboutUs-main {
         display: flex;
@@ -687,5 +688,83 @@
             row-gap: 1em;
         }
     
+    }
+}
+
+
+.benefist {
+    padding: 40px;
+    .benefist-container {
+        display: flex;
+        column-gap: 10px;
+        flex-basis: 45%;
+        align-items: center;
+  
+        .benefist-container__left{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            row-gap: 20px;
+                    h3{
+                        text-transform: uppercase;
+                        @media screen and (max-width: 695px) {
+                            font-size: 1em;
+                        }
+                    }
+                    h2 {
+                        text-transform: uppercase;
+                        @media screen and (max-width: 695px) {
+                            font-size: 1.9em;
+                        }
+                    }
+                    a{  
+                        display: block;
+                        @extend .btn;
+                        background-color: $light;
+                        color: $text-black;
+                        padding: 20px;
+                        min-width: 140px;
+                        text-transform: uppercase;
+                        font-size: 1em;
+                        &:hover {
+                            background-color: $primory;
+                            color: $light;
+                        }
+                        text-transform: uppercase;
+                        @media screen and (max-width: 695px) {
+                            text-align: center;
+                            font-size: .9em;
+                        }
+                    }
+                    
+        }
+        .benefist-container__right{
+            flex-basis: 55%;
+            .benefist-right__list{
+                    list-style-type: none;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    li {
+                        @extend .text-p;
+                        padding: 5px;
+                        line-height: 1.5;
+                        i{
+                            display: inline-block;
+                            color: #bb9151;
+                            text-align: center;
+                            font-size: 1em;
+                        }
+                        @media screen and (max-width: 695px) {
+                            font-size: .9em;
+                        }
+                    }
+                }
+          
+        }
+        @media screen and (max-width: 1350px) {
+        flex-direction: column;
+        row-gap: 40px;
+        }
     }
 }
