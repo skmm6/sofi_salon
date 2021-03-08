@@ -49,6 +49,25 @@ h3 {
     line-height: 1.4;
     letter-spacing: 3px;
 }
+.h3 {
+    font-weight: 600;
+    font-style: normal;
+    font-family: $text-ff__1;
+    color: $text-black;
+    font-size: 26px;
+    line-height: 1.4;
+    letter-spacing: 0px;
+}
+.h4 {
+    font-weight: 500;
+    font-style: normal;
+    font-family: $text-ff__1;
+    color: $text-black;
+    font-size: 18px;
+    line-height: 1.4;
+    letter-spacing: 0px;
+}
+
 
 //container-teg
 .container {

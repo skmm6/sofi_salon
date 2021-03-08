@@ -28,6 +28,26 @@ h3 {
   letter-spacing: 3px;
 }
 
+.h3 {
+  font-weight: 600;
+  font-style: normal;
+  font-family: "Montserrat", sans-serif;
+  color: #282828;
+  font-size: 26px;
+  line-height: 1.4;
+  letter-spacing: 0px;
+}
+
+.h4 {
+  font-weight: 500;
+  font-style: normal;
+  font-family: "Montserrat", sans-serif;
+  color: #282828;
+  font-size: 18px;
+  line-height: 1.4;
+  letter-spacing: 0px;
+}
+
 .container {
   max-width: 100%;
 }
