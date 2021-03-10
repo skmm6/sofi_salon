@@ -54,12 +54,14 @@ const accrodblock = document.querySelector('.accordion')
 
 // let acordionOn = function() {
 
-
+    let datasaveH = function(){
     accContent.forEach((contents, index) => {
-            console.log(contents.clientHeight);
             contents.setAttribute('data-height', contents.clientHeight)
             contents.style.height = 0
     })
+}
+
+datasaveH()
 
 let acrodadaptiv = function() {
     if(document.documentElement.clientWidth > 800) { 
@@ -76,11 +78,12 @@ let acrodadaptiv = function() {
 }
 
 acrodadaptiv()
-    
+
 window.onresize = function() {
     acrodadaptiv()
+    datasaveH()
 }
-
+// setTimeout(acrodadaptiv, 1000);
 
 
     // if(document.documentElement.clientWidth > 710) {
@@ -101,7 +104,7 @@ window.onresize = function() {
 // }
 // }
 
-
+let acrodheight = function() {
     accHeaders.forEach((header, index) => {
 
         header.onclick = function (event) {
@@ -112,14 +115,14 @@ window.onresize = function() {
             if (currentOpen && currentOpen != this.parentNode) {
                 currentOpen.classList.remove('open')
                 headerOpen.classList.remove('open')
-                currentOpen.querySelector('.accordion-item__content').style.height = 0
+                currentOpen.querySelector('.accordion-item__content').style.height  = 0
             }
             this.classList.toggle('open')
             this.parentNode.classList.toggle('open')
             if (this.parentNode.classList.contains('open')) {
-                accContent[index].style.height = accContent[index].getAttribute('data-height') + 'px'
+                accContent[index].style.height  = accContent[index].getAttribute('data-height') * 1.1 + 'px' 
             } else {
-                accContent[index].style.height = 0
+                accContent[index].style.height  = 0
             }
 
 
@@ -130,6 +133,12 @@ window.onresize = function() {
         }
 
     })
+}
+acrodheight()
+
+window.onresize = function() {
+    acrodadaptiv()
+}
 // }
 // acordionOn() 
 

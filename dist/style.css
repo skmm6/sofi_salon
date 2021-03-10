@@ -928,11 +928,36 @@ ul {
   /* display: none; */
   overflow: hidden;
 }
+.ourServices .ourServices-container .ourServices-container__content .accordion .accordion-item .accordion-item__content ul li {
+  padding: 5px;
+}
+@media screen and (max-width: 460px) {
+  .ourServices .ourServices-container .ourServices-container__content .accordion .accordion-item .accordion-item__content .h3 {
+    padding: 5px 0;
+    font-size: 1.3em;
+  }
+  .ourServices .ourServices-container .ourServices-container__content .accordion .accordion-item .accordion-item__content .h4 {
+    padding: 2px 0;
+    font-size: 0.9em;
+  }
+}
 .ourServices .ourServices-container .ourServices-container__content .accordion .accordion-item .accordion-item__content .content-item__img {
   height: 250px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+@media screen and (max-width: 666px) {
+  .ourServices .ourServices-container .ourServices-container__content .accordion .accordion-item .accordion-item__content .content-item__img {
+    height: 190px;
+    background-position: top center;
+  }
+}
+@media screen and (max-width: 460px) {
+  .ourServices .ourServices-container .ourServices-container__content .accordion .accordion-item .accordion-item__content .content-item__img {
+    height: 150px;
+    background-position: top center;
+  }
 }
 .ourServices .ourServices-container .ourServices-container__content .tabs {
   padding-top: 1rem;

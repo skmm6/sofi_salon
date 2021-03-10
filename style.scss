@@ -845,11 +845,35 @@
                         transition: .3s ease;
                         /* display: none; */
                         overflow: hidden;
+                        ul {
+                            li {
+                                padding: 5px;
+                            }
+                        }
+                        @media screen and (max-width:460px) {
+                          .h3 {
+                              padding: 5px 0;
+                              font-size: 1.3em;
+                          }
+                          .h4 {
+                            padding: 2px 0;
+                            font-size: .9em;
+                        }
+                        }
                         .content-item__img{
                             height: 250px;
                             background-repeat: no-repeat;
                             background-size: cover;
                             background-position: center;
+                            
+                            @media screen and (max-width:666px) {
+                                height: 190px;
+                                background-position: top center;
+                            }
+                            @media screen and (max-width:460px) {
+                                height: 150px;
+                                background-position: top center;
+                            }
                         }
                     }
                 }
