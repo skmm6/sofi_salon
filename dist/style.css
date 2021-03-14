@@ -92,7 +92,7 @@ h3 {
   cursor: pointer;
 }
 
-.text-p, .ourServices .ourServices-container .ourServices-container__content .tabs .tabs-content .tabs-content__item .content-item__text, .ourServices .ourServices-container .ourServices-container__content .tabs .tabs-content .tabs-content__item ul li, .ourServices .ourServices-container .ourServices-container__top p, .benefist .benefist-container .benefist-container__right .benefist-right__list li, .aboutUs .aboutUs-main .aboutUs-main__text {
+.text-p, .ourTeam .ourTeam-container .ourTeam-container__text .ourTeam-text__content, .ourServices .ourServices-container .ourServices-container__content .tabs .tabs-content .tabs-content__item .content-item__text, .ourServices .ourServices-container .ourServices-container__content .tabs .tabs-content .tabs-content__item ul li, .ourServices .ourServices-container .ourServices-container__content .accordion .accordion-item .accordion-item__content .h4, .ourServices .ourServices-container .ourServices-container__content .accordion .accordion-item .accordion-item__content .h3, .ourServices .ourServices-container .ourServices-container__content .accordion .accordion-item .accordion-item__content .content-item__text, .ourServices .ourServices-container .ourServices-container__content .accordion .accordion-item .accordion-item__content ul li, .ourServices .ourServices-container .ourServices-container__top p, .benefist .benefist-container .benefist-container__right .benefist-right__list li, .aboutUs .aboutUs-main .aboutUs-main__text {
   font-weight: 300;
   font-style: normal;
   font-family: "Montserrat", sans-serif;
@@ -113,6 +113,7 @@ h3 {
 
 :root {
   box-sizing: border-box;
+  transition: 0.3s ease;
 }
 
 *,
@@ -556,6 +557,12 @@ ul {
   text-transform: uppercase;
 }
 @media screen and (max-width: 695px) {
+  .aboutUs .aboutUs-main .aboutUs-main__yer h3 {
+    font-size: 16px;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 695px) {
   .aboutUs .aboutUs-main .aboutUs-main__yer {
     font-size: 16px;
   }
@@ -577,7 +584,7 @@ ul {
   }
 }
 .aboutUs .aboutUs-main .aboutUs-main__text {
-  font-size: calc(var(--text-l) + 2);
+  font-size: 18px;
   max-width: 80%;
   padding: 15px 0;
   transition: 0.3s ease;
@@ -689,7 +696,7 @@ ul {
   padding: 15px;
 }
 .aboutUs .aboutUs-contact .aboutUs-contact__boxitem .phones .phone a {
-  font-size: 1.3em;
+  font-size: 1.5em;
   line-height: 1.5;
   letter-spacing: 0px;
   font-weight: 400;
@@ -718,6 +725,7 @@ ul {
   color: #ffffff;
 }
 .aboutUs .aboutUs-contact .aboutUs-contact__boxitem .forms .reused_form input {
+  font-family: "Montserrat", sans-serif;
   outline: none;
   display: block;
   width: 100%;
@@ -727,13 +735,19 @@ ul {
   border: none;
   border-bottom: 1px solid;
   text-align: center;
-  font-size: 14px;
+  font-size: 1em;
   padding: 15px 0;
   line-height: 16px;
   background-color: transparent;
   font-style: normal;
   font-weight: 300;
   border-color: #ffffff;
+}
+.aboutUs .aboutUs-contact .aboutUs-contact__boxitem .forms .reused_form input::placeholder {
+  font-family: "Montserrat", sans-serif;
+  color: #ffffff;
+  font-size: 1em;
+  font-weight: 300;
 }
 .aboutUs .aboutUs-contact .aboutUs-contact__boxitem .forms .reused_form .button-primary {
   font-family: "Montserrat", sans-serif;
@@ -769,7 +783,11 @@ ul {
 }
 
 .benefist {
-  padding: 40px;
+  background-image: url(../img/mt-1922-content-bg02.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 60px 40px;
 }
 .benefist .benefist-container {
   display: flex;
@@ -855,9 +873,8 @@ ul {
 }
 
 .ourServices {
-  margin: 40px 0;
   background-color: #f9f5f1;
-  padding: 100px 40px;
+  padding: 140px 40px;
 }
 @media screen and (max-width: 600px) {
   .ourServices {
@@ -928,18 +945,38 @@ ul {
   /* display: none; */
   overflow: hidden;
 }
-.ourServices .ourServices-container .ourServices-container__content .accordion .accordion-item .accordion-item__content ul li {
-  padding: 5px;
+.ourServices .ourServices-container .ourServices-container__content .accordion .accordion-item .accordion-item__content ul {
+  padding: 0;
 }
-@media screen and (max-width: 460px) {
+.ourServices .ourServices-container .ourServices-container__content .accordion .accordion-item .accordion-item__content ul li {
+  padding: 0.1em;
+  font-size: 0.9em;
+}
+@media screen and (max-width: 350px) {
+  .ourServices .ourServices-container .ourServices-container__content .accordion .accordion-item .accordion-item__content ul li {
+    font-size: 0.8em;
+  }
+}
+.ourServices .ourServices-container .ourServices-container__content .accordion .accordion-item .accordion-item__content ul li i {
+  color: #bb9151;
+}
+.ourServices .ourServices-container .ourServices-container__content .accordion .accordion-item .accordion-item__content .content-item__text {
+  font-size: 0.8em;
+  padding: 0.5em 0;
+}
+.ourServices .ourServices-container .ourServices-container__content .accordion .accordion-item .accordion-item__content .h3 {
+  font-size: 1.3em;
+  padding: 5px 0;
+  font-weight: 400;
+}
+@media screen and (max-width: 400px) {
   .ourServices .ourServices-container .ourServices-container__content .accordion .accordion-item .accordion-item__content .h3 {
-    padding: 5px 0;
-    font-size: 1.3em;
+    font-size: 1em;
   }
-  .ourServices .ourServices-container .ourServices-container__content .accordion .accordion-item .accordion-item__content .h4 {
-    padding: 2px 0;
-    font-size: 0.9em;
-  }
+}
+.ourServices .ourServices-container .ourServices-container__content .accordion .accordion-item .accordion-item__content .h4 {
+  padding: 2px 0;
+  font-size: 0.9em;
 }
 .ourServices .ourServices-container .ourServices-container__content .accordion .accordion-item .accordion-item__content .content-item__img {
   height: 250px;
@@ -983,8 +1020,13 @@ ul {
   text-decoration: none;
   display: inline-block;
   cursor: pointer;
+  transition: 0.4s ease;
 }
-.ourServices .ourServices-container .ourServices-container__content .tabs .tabs-nav .tabs-nav__item.active, .ourServices .ourServices-container .ourServices-container__content .tabs .tabs-nav .tabs-nav__item:hover {
+.ourServices .ourServices-container .ourServices-container__content .tabs .tabs-nav .tabs-nav__item.active {
+  background-color: #bb9151;
+  color: #ffffff;
+}
+.ourServices .ourServices-container .ourServices-container__content .tabs .tabs-nav .tabs-nav__item:hover {
   background-color: #bb9151;
   color: #ffffff;
 }
@@ -1008,10 +1050,10 @@ ul {
   padding: 0.5em 0;
 }
 .ourServices .ourServices-container .ourServices-container__content .tabs .tabs-content .tabs-content__item ul li {
-  padding: 0.5em 0;
+  padding: 0.1em 0;
   display: flex;
   align-items: center;
-  column-gap: 0.5em;
+  column-gap: 0.1em;
 }
 .ourServices .ourServices-container .ourServices-container__content .tabs .tabs-content .tabs-content__item ul li i {
   font-size: 1.2em;
@@ -1027,4 +1069,65 @@ ul {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 30%;
+}
+
+.ourTeam .ourTeam-container .ourTeam-container__text h2 {
+  padding-top: 100px;
+  text-align: center;
+  text-transform: uppercase;
+}
+@media screen and (max-width: 730px) {
+  .ourTeam .ourTeam-container .ourTeam-container__text h2 {
+    font-size: 3em;
+  }
+}
+@media screen and (max-width: 430px) {
+  .ourTeam .ourTeam-container .ourTeam-container__text h2 {
+    font-size: 2em;
+  }
+}
+.ourTeam .ourTeam-container .ourTeam-container__text .ourTeam-text__content {
+  font-size: 18px;
+  padding: 15px 0;
+  transition: 0.3s ease;
+  text-align: center;
+  margin: 0 auto;
+  max-width: 70%;
+}
+@media screen and (max-width: 730px) {
+  .ourTeam .ourTeam-container .ourTeam-container__text .ourTeam-text__content {
+    font-size: 1em;
+  }
+}
+@media screen and (max-width: 430px) {
+  .ourTeam .ourTeam-container .ourTeam-container__text .ourTeam-text__content {
+    font-size: 0.9em;
+  }
+}
+.ourTeam .ourTeam-container .ourTeam-container__img {
+  margin: 40px 0;
+  background-image: url(../img/ourTeambg.jpg);
+  height: 700px;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+}
+@media screen and (max-width: 950px) {
+  .ourTeam .ourTeam-container .ourTeam-container__img {
+    height: 500px;
+  }
+}
+@media screen and (max-width: 730px) {
+  .ourTeam .ourTeam-container .ourTeam-container__img {
+    height: 300px;
+  }
+}
+@media screen and (max-width: 430px) {
+  .ourTeam .ourTeam-container .ourTeam-container__img {
+    height: 200px;
+  }
+}
+
+.map {
+  margin: 60px 0;
 }
