@@ -28,6 +28,16 @@ h3 {
   letter-spacing: 3px;
 }
 
+h4 {
+  font-weight: 700;
+  font-style: normal;
+  font-family: "Montserrat", sans-serif;
+  color: #282828;
+  font-size: 40px;
+  line-height: 1.2;
+  letter-spacing: 2px;
+}
+
 .h3 {
   font-weight: 600;
   font-style: normal;
@@ -106,4 +116,31 @@ h3 {
   background-size: cover;
   background-position: center;
   flex-basis: 33%;
+}
+
+.nav-logos {
+  width: 100%;
+  flex-grow: 2;
+  padding: 15px 0;
+  max-width: 15%;
+  text-align: center;
+}
+.nav-logos a {
+  text-align: center;
+  font-size: 70px;
+  color: #282828;
+}
+@media screen and (max-width: 1039px) {
+  .nav-logos a {
+    font-size: 50px;
+  }
+}
+@media screen and (max-width: 695px) {
+  .nav-logos {
+    max-width: 100%;
+    text-align: center;
+  }
+  .nav-logos a {
+    font-size: 80px;
+  }
 }

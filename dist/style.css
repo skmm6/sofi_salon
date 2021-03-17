@@ -31,6 +31,16 @@ h3 {
   letter-spacing: 3px;
 }
 
+h4 {
+  font-weight: 700;
+  font-style: normal;
+  font-family: "Montserrat", sans-serif;
+  color: #282828;
+  font-size: 40px;
+  line-height: 1.2;
+  letter-spacing: 2px;
+}
+
 .h3 {
   font-weight: 600;
   font-style: normal;
@@ -76,7 +86,7 @@ h3 {
   border-bottom: 2px solid #ffffff;
 }
 
-.btn, .benefist .benefist-container .benefist-container__left a, .aboutUs .aboutUs-contact .aboutUs-contact__boxitem .forms .reused_form .button-primary, .bilbord .bilbord-main .bilbord-main__flex .bilbord-main__btn button, .header .nav-end .nav-bnt button {
+.btn, .contact .contact-container .contact-container__git button, .benefist .benefist-container .benefist-container__left a, .aboutUs .aboutUs-contact .aboutUs-contact__boxitem .forms .reused_form .button-primary, .bilbord .bilbord-main .bilbord-main__flex .bilbord-main__btn button, .header .nav-end .nav-bnt button {
   offset: none;
   border: 2px solid #bb9151;
   font-size: 12px;
@@ -92,7 +102,7 @@ h3 {
   cursor: pointer;
 }
 
-.text-p, .ourTeam .ourTeam-container .ourTeam-container__text .ourTeam-text__content, .ourServices .ourServices-container .ourServices-container__content .tabs .tabs-content .tabs-content__item .content-item__text, .ourServices .ourServices-container .ourServices-container__content .tabs .tabs-content .tabs-content__item ul li, .ourServices .ourServices-container .ourServices-container__content .accordion .accordion-item .accordion-item__content .h4, .ourServices .ourServices-container .ourServices-container__content .accordion .accordion-item .accordion-item__content .h3, .ourServices .ourServices-container .ourServices-container__content .accordion .accordion-item .accordion-item__content .content-item__text, .ourServices .ourServices-container .ourServices-container__content .accordion .accordion-item .accordion-item__content ul li, .ourServices .ourServices-container .ourServices-container__top p, .benefist .benefist-container .benefist-container__right .benefist-right__list li, .aboutUs .aboutUs-main .aboutUs-main__text {
+.text-p, .footer .footer-container .footer-box .footer-box__text, .contact .contact-container .contact-container__details .details-box p, .contact .contact-container .contact-container__details .details-box a, .contact .contact-container .contact-container__details .details-box i, .ourTeam .ourTeam-container .ourTeam-container__text .ourTeam-text__content, .ourServices .ourServices-container .ourServices-container__content .tabs .tabs-content .tabs-content__item .content-item__text, .ourServices .ourServices-container .ourServices-container__content .tabs .tabs-content .tabs-content__item ul li, .ourServices .ourServices-container .ourServices-container__content .accordion .accordion-item .accordion-item__content .h4, .ourServices .ourServices-container .ourServices-container__content .accordion .accordion-item .accordion-item__content .h3, .ourServices .ourServices-container .ourServices-container__content .accordion .accordion-item .accordion-item__content .content-item__text, .ourServices .ourServices-container .ourServices-container__content .accordion .accordion-item .accordion-item__content ul li, .ourServices .ourServices-container .ourServices-container__top p, .benefist .benefist-container .benefist-container__right .benefist-right__list li, .aboutUs .aboutUs-main .aboutUs-main__text {
   font-weight: 300;
   font-style: normal;
   font-family: "Montserrat", sans-serif;
@@ -109,6 +119,33 @@ h3 {
   background-size: cover;
   background-position: center;
   flex-basis: 33%;
+}
+
+.nav-logos, .footer .footer-container .footer-box .nav-logo, .header .nav-logo {
+  width: 100%;
+  flex-grow: 2;
+  padding: 15px 0;
+  max-width: 15%;
+  text-align: center;
+}
+.nav-logos a, .footer .footer-container .footer-box .nav-logo a, .header .nav-logo a {
+  text-align: center;
+  font-size: 70px;
+  color: #282828;
+}
+@media screen and (max-width: 1039px) {
+  .nav-logos a, .footer .footer-container .footer-box .nav-logo a, .header .nav-logo a {
+    font-size: 50px;
+  }
+}
+@media screen and (max-width: 695px) {
+  .nav-logos, .footer .footer-container .footer-box .nav-logo, .header .nav-logo {
+    max-width: 100%;
+    text-align: center;
+  }
+  .nav-logos a, .footer .footer-container .footer-box .nav-logo a, .header .nav-logo a {
+    font-size: 80px;
+  }
 }
 
 :root {
@@ -341,32 +378,6 @@ ul {
 @media screen and (max-width: 695px) {
   .header .nav #burger-menu {
     display: block;
-  }
-}
-.header .nav-logo {
-  width: 100%;
-  flex-grow: 2;
-  padding: 15px 0;
-  max-width: 15%;
-  text-align: center;
-}
-.header .nav-logo a {
-  text-align: center;
-  font-size: 70px;
-  color: #282828;
-}
-@media screen and (max-width: 1039px) {
-  .header .nav-logo a {
-    font-size: 50px;
-  }
-}
-@media screen and (max-width: 695px) {
-  .header .nav-logo {
-    max-width: 100%;
-    text-align: center;
-  }
-  .header .nav-logo a {
-    font-size: 80px;
   }
 }
 .header .nav-end {
@@ -1129,5 +1140,109 @@ ul {
 }
 
 .map {
-  margin: 60px 0;
+  margin-top: 100px;
+  margin-bottom: 30px;
+}
+
+.contact {
+  background-image: url(../img/contactbg.jpg);
+  background-position: left bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 100px 0;
+}
+@media screen and (max-width: 1800px) {
+  .contact {
+    background-size: 100%;
+  }
+}
+.contact .contact-container {
+  display: flex;
+  flex-grow: 1;
+}
+.contact .contact-container .contact-container__details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  row-gap: 15px;
+  flex-grow: 1;
+}
+.contact .contact-container .contact-container__details .details-box {
+  display: flex;
+  column-gap: 10px;
+}
+.contact .contact-container .contact-container__details .details-box i {
+  color: #bb9151;
+  font-size: 1.2em;
+}
+.contact .contact-container .contact-container__details .details-box a {
+  text-decoration: none;
+  font-size: 1.2em;
+  transition: 0.8s ease;
+}
+.contact .contact-container .contact-container__details .details-box a:hover {
+  color: #bb9151;
+}
+.contact .contact-container .contact-container__details .details-box p {
+  font-size: 1.2em;
+}
+.contact .contact-container .contact-container__git {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+.contact .contact-container .contact-container__git .container-git__form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+.contact .contact-container .contact-container__git .container-git__form input {
+  font-family: "Montserrat", sans-serif;
+  outline: none;
+  display: block;
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #fff;
+  color: #282828;
+  border: none;
+  text-align: center;
+  font-size: 1em;
+  line-height: 16px;
+  background-color: transparent;
+  font-style: normal;
+  font-weight: 300;
+  background-color: #f9f5f1;
+  text-align: left;
+  padding: 20px;
+}
+.contact .contact-container .contact-container__git .container-git__form input::placeholder {
+  font-family: "Montserrat", sans-serif;
+  color: #282828;
+  font-size: 1em;
+  font-weight: 300;
+  text-align: left;
+}
+.contact .contact-container .contact-container__git button {
+  padding: 15px 35px;
+  text-transform: uppercase;
+  background-color: #bb9151;
+  color: #ffffff;
+  transition: ease 0.3s;
+}
+.contact .contact-container .contact-container__git button:hover {
+  background-color: #ffffff;
+  color: #282828;
+}
+
+.footer {
+  background-color: #282828;
+  padding: 40px 0;
+}
+.footer .footer-container .footer-box .nav-logo a {
+  color: #ffffff;
+}
+.footer .footer-container .footer-box .footer-box__text {
+  color: #ffffff;
+  font-size: 16px;
 }

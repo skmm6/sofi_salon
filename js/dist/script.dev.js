@@ -118,6 +118,8 @@ acrodheight();
 
 window.onresize = function () {
   acrodadaptiv();
-}; // }
+};
+
+var bgsize = function bgsize() {}; // }
 // acordionOn() 
 // acordion

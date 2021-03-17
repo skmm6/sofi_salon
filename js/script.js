@@ -139,6 +139,11 @@ acrodheight()
 window.onresize = function() {
     acrodadaptiv()
 }
+
+
+let bgsize = function(){
+    
+}
 // }
 // acordionOn() 
 

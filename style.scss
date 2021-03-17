@@ -223,30 +223,7 @@
     }
 
     .nav-logo {
-        width: 100%;
-        flex-grow: 2;
-        padding: 15px 0;
-        max-width: 15%;
-        text-align: center;
-
-        a {
-            text-align: center;
-            font-size: 70px;
-            color: $text-black;
-
-            @media screen and (max-width: 1039px) {
-                font-size: 50px;
-            }
-        }
-
-        @media screen and (max-width: 695px) {
-            max-width: 100%;
-            text-align: center;
-
-            a {
-                font-size: 80px;
-            }
-        }
+            @extend .nav-logos;
     }
 
     .nav-end {
@@ -1056,6 +1033,128 @@
         }
     }
 }
+
+
 .map{
-    margin: 60px 0;
+    margin-top: 100px;
+    margin-bottom: 30px;
+}
+
+
+.contact{
+    background-image: url(../img/contactbg.jpg);
+    background-position: left bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px 0;
+    @media screen and (max-width:1800px) {
+        background-size: 100%;
+    }
+    .contact-container{
+        display: flex;
+        flex-grow: 1;
+       .contact-container__details{
+           display: flex;
+           flex-direction: column;
+           align-items: flex-start;
+           row-gap: 15px;
+           flex-grow: 1;
+           h4 {
+
+           }
+           .details-box{
+               display: flex;
+               column-gap: 10px;
+               i{
+                 @extend .text-p;
+                color: $primory;
+                font-size: 1.2em;
+               }
+               a{
+                @extend .text-p;
+                   text-decoration: none;
+                   font-size: 1.2em;
+                   transition: .8s ease;
+                   &:hover{
+                       color: $primory
+                   }
+               }
+               p{
+                @extend .text-p;
+                font-size: 1.2em;
+               }
+           }
+       }
+       .contact-container__git {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+        .container-git__form{
+            display: flex;
+            flex-direction: column;
+            row-gap: 10px;
+            input {
+                font-family: $text-ff__1;
+                outline: none;
+                display: block;
+                width: 100%;
+                border: none;
+                border-bottom: 2px solid #fff;
+                color: $text-black;
+                border: none;
+                text-align: center;
+                font-size: 1em;
+                line-height: 16px;
+                background-color: transparent;
+                font-style: normal;
+                font-weight: 300;
+                background-color: #f9f5f1;
+                text-align: left;
+                padding: 20px;
+                &::placeholder {
+                    font-family: $text-ff__1;
+                    color: $text-black;
+                    font-size: 1em;
+                    font-weight: 300;
+                    text-align: left;
+                  }
+            }
+        }
+        button{
+            padding: 15px 35px;
+            @extend .btn;
+            text-transform: uppercase;
+            background-color: $primory;
+            color: $light;
+            transition: ease .3s;
+            &:hover{
+                background-color: $light;
+                color: $text-black;
+            }
+
+        }
+       }
+
+    }
+}
+
+.footer{
+    background-color: $text-black;
+    padding: 40px 0;
+    .footer-container{
+        .footer-box{
+            .nav-logo{
+                @extend .nav-logos;
+              a{
+                  color: $light;
+              }
+            }
+            .footer-box__text{
+                @extend .text-p;
+                color: $light;
+                font-size: 16px;
+            }
+        }
+    }
 }
