@@ -102,7 +102,7 @@ h4 {
   cursor: pointer;
 }
 
-.text-p, .footer .footer-container .footer-box .footer-box__text, .contact .contact-container .contact-container__details .details-box p, .contact .contact-container .contact-container__details .details-box a, .contact .contact-container .contact-container__details .details-box i, .ourTeam .ourTeam-container .ourTeam-container__text .ourTeam-text__content, .ourServices .ourServices-container .ourServices-container__content .tabs .tabs-content .tabs-content__item .content-item__text, .ourServices .ourServices-container .ourServices-container__content .tabs .tabs-content .tabs-content__item ul li, .ourServices .ourServices-container .ourServices-container__content .accordion .accordion-item .accordion-item__content .h4, .ourServices .ourServices-container .ourServices-container__content .accordion .accordion-item .accordion-item__content .h3, .ourServices .ourServices-container .ourServices-container__content .accordion .accordion-item .accordion-item__content .content-item__text, .ourServices .ourServices-container .ourServices-container__content .accordion .accordion-item .accordion-item__content ul li, .ourServices .ourServices-container .ourServices-container__top p, .benefist .benefist-container .benefist-container__right .benefist-right__list li, .aboutUs .aboutUs-main .aboutUs-main__text {
+.text-p, .footer .footer-bottom p, .footer .footer-container .footer-box .content p, .footer .footer-container .footer-box .content a, .footer .footer-container .footer-box .footer-box__text, .contact .contact-container .contact-container__details .details-box p, .contact .contact-container .contact-container__details .details-box a, .contact .contact-container .contact-container__details .details-box i, .ourTeam .ourTeam-container .ourTeam-container__text .ourTeam-text__content, .ourServices .ourServices-container .ourServices-container__content .tabs .tabs-content .tabs-content__item .content-item__text, .ourServices .ourServices-container .ourServices-container__content .tabs .tabs-content .tabs-content__item ul li, .ourServices .ourServices-container .ourServices-container__content .accordion .accordion-item .accordion-item__content .h4, .ourServices .ourServices-container .ourServices-container__content .accordion .accordion-item .accordion-item__content .h3, .ourServices .ourServices-container .ourServices-container__content .accordion .accordion-item .accordion-item__content .content-item__text, .ourServices .ourServices-container .ourServices-container__content .accordion .accordion-item .accordion-item__content ul li, .ourServices .ourServices-container .ourServices-container__top p, .benefist .benefist-container .benefist-container__right .benefist-right__list li, .aboutUs .aboutUs-main .aboutUs-main__text {
   font-weight: 300;
   font-style: normal;
   font-family: "Montserrat", sans-serif;
@@ -1151,14 +1151,41 @@ ul {
   background-size: cover;
   padding: 100px 0;
 }
+@media screen and (max-width: 850px) {
+  .contact {
+    padding: 20px 0;
+  }
+}
+@media screen and (max-width: 550px) {
+  .contact h4 {
+    font-size: 2em;
+  }
+}
 @media screen and (max-width: 1800px) {
   .contact {
     background-size: 100%;
   }
 }
+@media screen and (max-width: 850px) {
+  .contact {
+    background-image: none;
+  }
+}
 .contact .contact-container {
   display: flex;
   flex-grow: 1;
+}
+@media screen and (max-width: 1250px) {
+  .contact .contact-container {
+    padding: 0 15px;
+  }
+}
+@media screen and (max-width: 850px) {
+  .contact .contact-container {
+    padding: 0 15px;
+    flex-direction: column;
+    row-gap: 20px;
+  }
 }
 .contact .contact-container .contact-container__details {
   display: flex;
@@ -1237,7 +1264,18 @@ ul {
 
 .footer {
   background-color: #282828;
-  padding: 40px 0;
+  padding-top: 40px;
+}
+.footer .footer-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer .footer-container .footer-box {
+  flex-basis: 40%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
 }
 .footer .footer-container .footer-box .nav-logo a {
   color: #ffffff;
@@ -1245,4 +1283,51 @@ ul {
 .footer .footer-container .footer-box .footer-box__text {
   color: #ffffff;
   font-size: 16px;
+}
+.footer .footer-container .footer-box .footer-icons {
+  padding: 10px 0;
+  display: flex;
+}
+.footer .footer-container .footer-box .footer-icons i {
+  font-size: 0.9em;
+  margin: 5px;
+  padding: 0.2em;
+  background-color: #ffffff;
+  border-radius: 100%;
+  transition: ease 0.5s;
+}
+.footer .footer-container .footer-box .footer-icons i:hover {
+  background-color: #bb9151;
+}
+.footer .footer-container .footer-box .heading {
+  font-weight: 600;
+  font-style: normal;
+  font-family: "Montserrat", sans-serif;
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 1.2;
+  letter-spacing: 2px;
+}
+.footer .footer-container .footer-box .content {
+  display: flex;
+}
+.footer .footer-container .footer-box .content i {
+  position: relative;
+  top: 2px;
+  color: #bb9151;
+  padding: 0 15px;
+}
+.footer .footer-container .footer-box .content a {
+  color: #bb9151;
+}
+.footer .footer-container .footer-box .content p {
+  color: #ffffff;
+  font-size: 16px;
+}
+.footer .footer-bottom {
+  background-color: #000;
+}
+.footer .footer-bottom p {
+  color: #fff;
+  padding: 1em 0;
 }

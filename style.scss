@@ -1047,21 +1047,37 @@
     background-repeat: no-repeat;
     background-size: cover;
     padding: 100px 0;
+    @media screen and(max-width:850px){
+        padding: 20px 0;
+    }
+    h4 {
+        @media screen and(max-width:550px){
+            font-size: 2em;
+        }
+       }
     @media screen and (max-width:1800px) {
         background-size: 100%;
+    }
+    @media screen and(max-width:850px){
+        background-image: none;
     }
     .contact-container{
         display: flex;
         flex-grow: 1;
+        @media screen and(max-width:1250px){
+            padding: 0 15px;
+        }
+        @media screen and(max-width:850px){
+            padding: 0 15px;
+            flex-direction: column;
+            row-gap: 20px;
+        }
        .contact-container__details{
            display: flex;
            flex-direction: column;
            align-items: flex-start;
            row-gap: 15px;
            flex-grow: 1;
-           h4 {
-
-           }
            .details-box{
                display: flex;
                column-gap: 10px;
@@ -1141,9 +1157,17 @@
 
 .footer{
     background-color: $text-black;
-    padding: 40px 0;
+    padding-top: 40px;
     .footer-container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        
         .footer-box{
+            flex-basis: 40%;
+            display: flex;
+            flex-direction: column;
+            row-gap: 20px;
             .nav-logo{
                 @extend .nav-logos;
               a{
@@ -1155,6 +1179,56 @@
                 color: $light;
                 font-size: 16px;
             }
+            .footer-icons{
+                padding: 10px 0;
+                display: flex;
+                i{  
+                    font-size: .9em;
+                    margin: 5px;
+                    padding: .2em;
+                    background-color: $light;
+                    border-radius: 100%;
+                    transition: ease .5s;
+                    &:hover {
+                        background-color: $primory;
+                    }
+                }
+            }
+            .heading{
+                font-weight: 600;
+                font-style: normal;
+                font-family: 'Montserrat', sans-serif;
+                color: #ffffff;
+                font-size: 18px;
+                line-height: 1.2;
+                letter-spacing: 2px;
+            }
+            .content{
+                display: flex;
+                i{
+                    position: relative;
+                    top: 2px;
+                    color: $primory;
+                    padding: 0 15px;
+                }
+                a{
+                    @extend .text-p;
+                    color: $primory; 
+                }
+                p{  
+                    @extend .text-p;
+                    color: $light;
+                    font-size: 16px;
+                }
+            }
         }
+    }
+    .footer-bottom{
+        background-color: #000;
+            p{
+                @extend .text-p;
+                color: #fff;
+                padding: 1em 0;
+            }
     }
 }
