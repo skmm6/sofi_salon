@@ -1232,3 +1232,99 @@
             }
     }
 }
+
+
+// modal
+.modal {
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: none;
+    &-content {
+        background-color: #f4f4f4;
+        margin: 15% auto;
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 40%;
+        row-gap: 10px;
+        box-shadow: 0 5px 8px 0  rgba(0, 0, 0, .2), 0 7px 20px 0 rgba(0, 0, 0, .2);
+        animation-name: modalopen;
+        animation-duration: 1s;
+        @keyframes modalopen {
+            from {opacity: 0}
+            to {opacity: 1}
+        }
+        h4{
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            font-size: 2vmax;
+            text-align: center;
+        }
+        .closeBtn{
+            color: #ccc;
+            float: right;
+            font-size: 50px;
+            transition: .3 ease;
+            align-self: flex-end;
+            &:hover, &:focus{
+                color: #000;
+                text-decoration: none;
+                cursor: pointer;
+            }
+        }
+        &__form{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            margin: 0 auto;
+            row-gap: 15px;
+            input {
+                font-family: $text-ff__1;
+                outline: none;
+                display: block;
+                width: 100%;
+                border: none;
+                border-bottom: 2px solid #fff;
+                color: $text-black;
+                border: none;
+                text-align: center;
+                font-size: 1em;
+                line-height: 16px;
+                background-color: transparent;
+                font-style: normal;
+                font-weight: 300;
+                background-color: #ece5de;
+                text-align: left;
+                padding: 20px;
+                &::placeholder {
+                    font-family: $text-ff__1;
+                    color: $text-black;
+                    font-size: 1em;
+                    font-weight: 300;
+                    text-align: left;
+                  }
+            }
+            button{
+                padding: 15px 35px;
+                @extend .btn;
+                text-transform: uppercase;
+                background-color: $primory;
+                color: $light;
+                transition: ease .3s;
+                &:hover{
+                    background-color: $light;
+                    color: $text-black;
+                }
+    
+            }   
+        }
+
+    }
+}   

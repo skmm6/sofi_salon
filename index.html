@@ -48,7 +48,7 @@
                         <li><a href=""><i class="icon-facebook"></i></a> </li>
                     </ul>
                     <div class="nav-bnt">
-                        <button href="#"><span>Заказать звонок</span></button>
+                        <button id="modalBtn" href="#"><span>Заказать звонок</span></button>
                     </div>
                 </div>
 
@@ -66,12 +66,30 @@
                 <div class="bilbord-main__text">
                     <h1 class="">Открой себя в СОФИ</h1>
                 </div>
-                <div class="bilbord-main__btn"> <button href="#"><span>Заказать звонок</span></и>
+                <div id="modalBtn" class="bilbord-main__btn"> <button href="#"><span>Заказать звонок</span></и>
                 </div>
             </div>
             <!-- <div class="sofi">sofi</div> -->
         </div>
     </section>
+
+    <!-- modalwindow -->
+    <div id="simpleModal" class="modal">
+        <div class="modal-content">
+            <span class="closeBtn">&times;</span>
+            <h4>Заказать обратный звонок</h4>
+            <form method="post" class="modal-content__form"> 
+                <input id="name" type="name" placeholder="Имя *" name="Name" required maxlength="50">
+                <input id="phone" type="phone" placeholder="Телефон *" name="phone" maxlength="50">
+                <button class="button-primary" type="submit">Отправить</button>
+            </form>
+        </div>
+    </div>
+    <!-- end -->
+
+
+
+
 
     <section class="aboutUs container ">
         <div class="aboutUs-main container-fluid">
@@ -84,7 +102,7 @@
                 окрашивания, работа с одними из лучших брендов красителей и ухода и их продажа Wella, LAKME, Loreal.
                 Маникюрный и педикюрный залы. Наращивание и ламинирование ресниц, татуаж, все виды массажа, шугаринг и
                 электроэпиляция, косметология.</div>
-            <div class="aboutUs-main__btn"> <a href="#"><span>Узнать больше</span></a></div>
+            <div class="aboutUs-main__btn"> <a href="#benefists"><span>Узнать больше</span></a></div>
         </div>
 
         <div class="aboutUs-contact">
@@ -123,12 +141,12 @@
 
     </section>
 
-    <section class="benefist container">
+    <section class="benefist container" id="benefists">
         <div class="benefist-container container-fluid">
             <div class="benefist-container__left">
                 <h3>Почему имеенно мы</h3>
                 <h2>Наши преимущества</h2>
-                <a href="">Узнать больше</a>
+                <a href="#ourServicess">Узнать больше</a>
             </div>
             <div class="benefist-container__right">
                 <ul class="benefist-right__list">
@@ -147,7 +165,7 @@
     <section class="ourServices container">
         <div class="ourServices-container container-fluid">
             <div class="ourServices-container__top">
-                <h3>Что мы делаем</h3>
+                <h3 id="ourServicess">Что мы делаем</h3>
                 <h2>Наши услуги</h2>
                 <p>Получите молодое, модное, потрясающее наращивание волос. Хорошая внешность только заставит вас
                     почувствовать себя лучше</p>

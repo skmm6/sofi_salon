@@ -151,3 +151,42 @@ let bgsize = function(){
 
 
 // acordion
+
+// modalwinow
+let modal = document.getElementById('simpleModal')
+let modalBtn = document.querySelectorAll('#modalBtn')
+let clsoeBtn = document.querySelector('.closeBtn')
+
+modalBtn.forEach(modalbtn => modalbtn.addEventListener('click', openModal))
+// array1.forEach(element => console.log(element));
+
+clsoeBtn.addEventListener('click', closeModal)
+
+window.addEventListener('click', clickOutside)
+
+
+function openModal(){
+    modal.style.display = 'block'
+}
+function closeModal(){
+    modal.style.display = 'none'
+}
+function clickOutside(e) {
+    if(e.target == modal){
+        modal.style.display = 'none'
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+// end

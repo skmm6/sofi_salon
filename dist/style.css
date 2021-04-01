@@ -86,7 +86,7 @@ h4 {
   border-bottom: 2px solid #ffffff;
 }
 
-.btn, .contact .contact-container .contact-container__git button, .benefist .benefist-container .benefist-container__left a, .aboutUs .aboutUs-contact .aboutUs-contact__boxitem .forms .reused_form .button-primary, .bilbord .bilbord-main .bilbord-main__flex .bilbord-main__btn button, .header .nav-end .nav-bnt button {
+.btn, .modal-content__form button, .contact .contact-container .contact-container__git button, .benefist .benefist-container .benefist-container__left a, .aboutUs .aboutUs-contact .aboutUs-contact__boxitem .forms .reused_form .button-primary, .bilbord .bilbord-main .bilbord-main__flex .bilbord-main__btn button, .header .nav-end .nav-bnt button {
   offset: none;
   border: 2px solid #bb9151;
   font-size: 12px;
@@ -1330,4 +1330,99 @@ ul {
 .footer .footer-bottom p {
   color: #fff;
   padding: 1em 0;
+}
+
+.modal {
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: none;
+}
+.modal-content {
+  background-color: #f4f4f4;
+  margin: 15% auto;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 40%;
+  row-gap: 10px;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.2);
+  animation-name: modalopen;
+  animation-duration: 1s;
+}
+@keyframes modalopen {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.modal-content h4 {
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  font-size: 2vmax;
+  text-align: center;
+}
+.modal-content .closeBtn {
+  color: #ccc;
+  float: right;
+  font-size: 50px;
+  transition: 0.3 ease;
+  align-self: flex-end;
+}
+.modal-content .closeBtn:hover, .modal-content .closeBtn:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+.modal-content__form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  row-gap: 15px;
+}
+.modal-content__form input {
+  font-family: "Montserrat", sans-serif;
+  outline: none;
+  display: block;
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #fff;
+  color: #282828;
+  border: none;
+  text-align: center;
+  font-size: 1em;
+  line-height: 16px;
+  background-color: transparent;
+  font-style: normal;
+  font-weight: 300;
+  background-color: #ece5de;
+  text-align: left;
+  padding: 20px;
+}
+.modal-content__form input::placeholder {
+  font-family: "Montserrat", sans-serif;
+  color: #282828;
+  font-size: 1em;
+  font-weight: 300;
+  text-align: left;
+}
+.modal-content__form button {
+  padding: 15px 35px;
+  text-transform: uppercase;
+  background-color: #bb9151;
+  color: #ffffff;
+  transition: ease 0.3s;
+}
+.modal-content__form button:hover {
+  background-color: #ffffff;
+  color: #282828;
 }
