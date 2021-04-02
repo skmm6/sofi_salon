@@ -1163,6 +1163,9 @@
         align-items: center;
         justify-content: space-between;
         @media screen and (max-width: 695px) {
+            padding: 20px;
+           }
+        @media screen and (max-width: 695px) {
             flex-direction: column;
           }
         
@@ -1171,6 +1174,9 @@
             display: flex;
             flex-direction: column;
             row-gap: 20px;
+            @media screen and (max-width: 695px) {
+                row-gap: 30px;
+               }
             .nav-logo{
                 @extend .nav-logos;
               a{
@@ -1187,6 +1193,7 @@
                 display: flex;
                 @media screen and (max-width: 695px) {
                     align-self: center;
+                    margin-bottom: 15px;
                   }
                 i{  
                     font-size: .9em;
@@ -1234,6 +1241,9 @@
     }
     .footer-bottom{
         background-color: #000;
+        @media screen and (max-width: 695px) {
+           padding: 20px;
+          }
             p{
                 @extend .text-p;
                 color: #fff;
