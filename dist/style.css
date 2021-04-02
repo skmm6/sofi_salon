@@ -1359,6 +1359,7 @@ ul {
   display: none;
 }
 .modal-content {
+  box-sizing: border-box;
   background-color: #f4f4f4;
   margin: 15% auto;
   padding: 20px;
@@ -1374,6 +1375,7 @@ ul {
 @media screen and (max-width: 695px) {
   .modal-content {
     width: 100%;
+    margin: 20% auto;
   }
 }
 @keyframes modalopen {
@@ -1389,6 +1391,11 @@ ul {
   margin-bottom: 20px;
   font-size: 2vmax;
   text-align: center;
+}
+@media screen and (max-width: 695px) {
+  .modal-content h4 {
+    font-size: 1.5vmax;
+  }
 }
 .modal-content .closeBtn {
   color: #ccc;
