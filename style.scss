@@ -1162,6 +1162,9 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+        @media screen and (max-width: 695px) {
+            flex-direction: column;
+          }
         
         .footer-box{
             flex-basis: 40%;
@@ -1182,6 +1185,9 @@
             .footer-icons{
                 padding: 10px 0;
                 display: flex;
+                @media screen and (max-width: 695px) {
+                    align-self: center;
+                  }
                 i{  
                     font-size: .9em;
                     margin: 5px;
@@ -1189,6 +1195,9 @@
                     background-color: $light;
                     border-radius: 100%;
                     transition: ease .5s;
+                    @media screen and (max-width: 695px) {
+                        font-size: 2em;
+                      }
                     &:hover {
                         background-color: $primory;
                     }
@@ -1257,6 +1266,9 @@
         box-shadow: 0 5px 8px 0  rgba(0, 0, 0, .2), 0 7px 20px 0 rgba(0, 0, 0, .2);
         animation-name: modalopen;
         animation-duration: 1s;
+        @media screen and (max-width: 695px) {
+          width: 100%;
+        }
         @keyframes modalopen {
             from {opacity: 0}
             to {opacity: 1}

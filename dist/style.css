@@ -1271,6 +1271,11 @@ ul {
   align-items: center;
   justify-content: space-between;
 }
+@media screen and (max-width: 695px) {
+  .footer .footer-container {
+    flex-direction: column;
+  }
+}
 .footer .footer-container .footer-box {
   flex-basis: 40%;
   display: flex;
@@ -1288,6 +1293,11 @@ ul {
   padding: 10px 0;
   display: flex;
 }
+@media screen and (max-width: 695px) {
+  .footer .footer-container .footer-box .footer-icons {
+    align-self: center;
+  }
+}
 .footer .footer-container .footer-box .footer-icons i {
   font-size: 0.9em;
   margin: 5px;
@@ -1295,6 +1305,11 @@ ul {
   background-color: #ffffff;
   border-radius: 100%;
   transition: ease 0.5s;
+}
+@media screen and (max-width: 695px) {
+  .footer .footer-container .footer-box .footer-icons i {
+    font-size: 2em;
+  }
 }
 .footer .footer-container .footer-box .footer-icons i:hover {
   background-color: #bb9151;
@@ -1355,6 +1370,11 @@ ul {
   box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.2);
   animation-name: modalopen;
   animation-duration: 1s;
+}
+@media screen and (max-width: 695px) {
+  .modal-content {
+    width: 100%;
+  }
 }
 @keyframes modalopen {
   from {
