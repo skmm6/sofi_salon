@@ -1162,6 +1162,7 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+        padding: 1em;
         @media screen and (max-width: 695px) {
             padding: 20px;
            }
@@ -1247,7 +1248,7 @@
             p{
                 @extend .text-p;
                 color: #fff;
-                padding: 1em 0;
+                padding: 1em;
             }
     }
 }

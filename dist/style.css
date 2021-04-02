@@ -1270,6 +1270,7 @@ ul {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 1em;
 }
 @media screen and (max-width: 695px) {
   .footer .footer-container {
@@ -1360,7 +1361,7 @@ ul {
 }
 .footer .footer-bottom p {
   color: #fff;
-  padding: 1em 0;
+  padding: 1em;
 }
 
 .modal {
