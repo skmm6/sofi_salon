@@ -190,3 +190,11 @@ function clickOutside(e) {
 
 
 // end
+
+//taer 
+let today = new Date()
+let year = today.getFullYear() 
+
+const yearBox = document.querySelector('#year')
+
+yearBox.innerHTML = year

@@ -1196,20 +1196,32 @@
                     align-self: center;
                     margin-bottom: 15px;
                   }
-                i{  
-                    font-size: .9em;
-                    margin: 5px;
-                    padding: .2em;
-                    background-color: $light;
-                    border-radius: 100%;
-                    transition: ease .5s;
-                    @media screen and (max-width: 695px) {
-                        font-size: 2em;
-                      }
-                    &:hover {
-                        background-color: $primory;
-                    }
-                }
+                  span{
+                        display: flex; 
+                        align-items: center; 
+                        justify-content: center;
+                        width: 1.5rem;
+                        height: 1.5rem;
+                        background-color: $light;
+                        margin: 5px;
+                        border-radius: 50%;
+                        transition: ease .5s;
+                        cursor: pointer;
+                        @media screen and (max-width: 695px) {
+                            width: 3rem;
+                            height: 3rem;
+                            font-size: 2em;
+                          }
+                        &:hover {
+                            background-color: $primory;
+                        }
+                        i{  
+                            color: $text-black;
+                            font-size: .9em; 
+                            }
+                        }
+                  }
+
             }
             .heading{
                 font-weight: 600;
@@ -1239,7 +1251,7 @@
                 }
             }
         }
-    }
+
     .footer-bottom{
         background-color: #000;
         @media screen and (max-width: 695px) {
@@ -1291,9 +1303,6 @@
             margin-bottom: 20px;
             font-size: 2vmax;
             text-align: center;
-            @media screen and (max-width: 695px) {
-                font-size: 1.5vmax;
-              }
         }
         .closeBtn{
             color: #ccc;

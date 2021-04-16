@@ -13,25 +13,22 @@
 <body>
 
 
-    <section class="header container">
+    <section class="header container" id="home">
         <div class="nav">
             <div class="container-fluid navbar">
                 <ul class="nav-menu" id="main-menu">
-                    <li class="m-0"><a href="">Главная</a></li>
-                    <li><a class="nav-menu_bloks" href="">Услуги</a></li>
-                    <li><a class="nav-menu_bloks" href="">Цены</a></li>
-                    <li><a class="nav-menu_bloks" href="">Контакты</a></li>
+                    <li class="m-0"><a href="#home">Главная</a></li>
+                    <li><a class="nav-menu_bloks" href="#aboutus">О нас</a></li>
+                    <li><a class="nav-menu_bloks" href="#contact">Контакты</a></li>
                     <li class="nav-menu__allblok">
                         <a class="nav-menu__ani">Все блоки <span id="nav-all__burger"></span></a>
                         <ul class="nav-menu__allbloks" id="all-menu">
-                            <li><a href="">О нас</a></li>
-                            <li><a href="">Льготы</a></li>
-                            <li><a href="">Услуги</a></li>
-                            <li><a href="">Отзывы</a></li>
-                            <li><a href="">Наша команда</a></li>
-                            <li><a href="">Партнеры</a></li>
-                            <li><a href="">Цены</a></li>
-                            <li><a href="">Контакты</a></li>
+                            <li><a href="#aboutus">О нас</a></li>
+                            <li><a href="#benefists">Наши преимущества</a></li>
+                            <li><a href="#ourServices">Услуги</a></li>
+                            <li><a href="#ourTeam">Наша команда</a></li>
+                            <li><a href="#map">Карта</a></li>
+                            <li><a href="#contact">Контакты</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -43,9 +40,9 @@
                 </div>
                 <div class="nav-end">
                     <ul class="nav-contact">
-                        <li><a class="m-0" href=""><i class="icon-instagram"></i></a> </li>
-                        <li><a href=""><i class="icon-vkontakte"></i></a> </li>
-                        <li><a href=""><i class="icon-facebook"></i></a> </li>
+                        <li><a class="m-0" target="_blank" href="https://www.instagram.com/sofi_beauty_dn/?hl=ru"><i class="icon-instagram"></i></a> </li>
+                        <li><a target="_blank" href="https://vk.com/salon.sofi_makeevka"><i class="icon-vkontakte"></i></a> </li>
+                        <li><a target="_blank" href=""><i class="icon-facebook"></i></a> </li>
                     </ul>
                     <div class="nav-bnt">
                         <button id="modalBtn" href="#"><span>Заказать звонок</span></button>
@@ -61,7 +58,7 @@
             <!-- <div class="salon">Salon</div> -->
             <div class="bilbord-main__flex container-fluid">
                 <div class="bilbord-main__yer">
-                    <h3 class="">Макеевка - с ХХХХ года</h3>
+                    <h3 class="">Макеевка - с 2011 года</h3>
                 </div>
                 <div class="bilbord-main__text">
                     <h1 class="">Открой себя в СОФИ</h1>
@@ -78,8 +75,8 @@
         <div class="modal-content">
             <span class="closeBtn">&times;</span>
             <h4>Заказать обратный звонок</h4>
-            <form method="post" class="modal-content__form"> 
-                <input id="name" type="name" placeholder="Имя *" name="Name" required maxlength="50">
+            <form action="./mail.php" method="POST" class="modal-content__form">
+                <input id="name" type="name" placeholder="Имя *" name="name" required maxlength="50">
                 <input id="phone" type="phone" placeholder="Телефон *" name="phone" maxlength="50">
                 <button class="button-primary" type="submit">Отправить</button>
             </form>
@@ -91,17 +88,13 @@
 
 
 
-    <section class="aboutUs container ">
+    <section class="aboutUs container" id="aboutus">
         <div class="aboutUs-main container-fluid">
             <div class="aboutUs-main__yer">
-                <h3 class="">Макеевка - с ХХХХ года</h3>
+                <h3 class="">Макеевка - с 2011 года</h3>
             </div>
             <div class="aboutUs-main__abaut ">о нас</div>
-            <div class="aboutUs-main__text">Салон открыт был 2011 г. Наша мечта о лучшей базе клиентов и мастерах
-                профессионалах сбылась. К нам можно прийти и сделать всё. Выпить вкусный кофе.Стрижки, все виды сложного
-                окрашивания, работа с одними из лучших брендов красителей и ухода и их продажа Wella, LAKME, Loreal.
-                Маникюрный и педикюрный залы. Наращивание и ламинирование ресниц, татуаж, все виды массажа, шугаринг и
-                электроэпиляция, косметология.</div>
+            <div class="aboutUs-main__text">Наш путь к профессиональному росту был долгий. Но и я смогла собрать команду, где мастера, жаждущие обучения, вышли на высокий уровень.Конкурсы в Киеве с занятыми 1-2 местами. Затем Москва МК Сарбашев Владимир, Игорь Хонин, Павел Шеф.М теперь мы смело можем сказать, что готовы создать лучшую версию себя для наших клиентов.</div>
             <div class="aboutUs-main__btn"> <a href="#benefists"><span>Узнать больше</span></a></div>
         </div>
 
@@ -162,7 +155,7 @@
     </section>
 
 
-    <section class="ourServices container">
+    <section class="ourServices container" id="ourServices">
         <div class="ourServices-container container-fluid">
             <div class="ourServices-container__top">
                 <h3 id="ourServicess">Что мы делаем</h3>
@@ -174,10 +167,8 @@
                 <div class="tabs">
                     <div class="tabs-nav">
                         <a href="#" class="tabs-nav__item active">Парикмахерский зал</a>
-                        <a href="#" class="tabs-nav__item">Брови, макияж, ресницы</a>
                         <a href="#" class="tabs-nav__item">Ногтевой сервис</a>
                         <a href="#" class="tabs-nav__item">Косметология</a>
-                        <a href="#" class="tabs-nav__item">Массаж, шугаринг</a>
                     </div>
                     <div class="tabs-content">
                         <div class="tabs-content__item active">
@@ -195,6 +186,9 @@
                                 <li><i class="icon-ok"></i>Уходовые процедуры</li>
                                 <li><i class="icon-ok"></i>Биозавивка волос</li>
                                 <li><i class="icon-ok"></i>Продажа косметики для волос</li>
+                                <li><i class="icon-ok"></i>ламинирование бровей и ресниц</li>
+                                <li><i class="icon-ok"></i>Окрашивание и корекция бровей</li>
+                                <li><i class="icon-ok"></i>Наращивание ресниц</li>
                             </ul>
                             <p class="content-item__text">Наши специалисты готовы воплотить все ваши мечты, любые виды
                                 мужских и женских стрижек, укладок и причесок разные виды окрашивания такие как простые,
@@ -203,36 +197,19 @@
                                 в продаже имеется косметика для волос.</p>
                         </div>
                         <div class="tabs-content__item">
-                            <div class="content-item__img" style="background-image: url(img/service2.jpg);"></div>
-                            <p class="h3">Брови, макияж, ресницы</p>
-                            <p class="h4">
-                                Услуги включают в себя:
-                            </p>
-                            <ul>
-                                <li><i class="icon-ok"></i>Услуга</li>
-                                <li><i class="icon-ok"></i>Услуга</li>
-                                <li><i class="icon-ok"></i>Услуга</li>
-                                <li><i class="icon-ok"></i>Услуга</li>
-                                <li><i class="icon-ok"></i>Услуга</li>
-                                <li><i class="icon-ok"></i>Услуга</li>
-                            </ul>
-                            <p class="content-item__text">Какой-то текст Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Aspernatur at deleniti eveniet maiores beatae optio quas possimus
-                                commodi molestiae quasi!</p>
-                        </div>
-                        <div class="tabs-content__item">
                             <div class="content-item__img" style="background-image: url(img/DSC_0870.jpg);"></div>
-                            <p class="h3">Виды парикмахерских услуг</p>
+                            <p class="h3">Ногтевой сервис</p>
                             <p class="h4">
-                                Парикмахерские услуги включают в себя:
+                                Ногтевой сервис включает в себя:
                             </p>
                             <ul>
-                                <li><i class="icon-ok"></i>Услуга</li>
-                                <li><i class="icon-ok"></i>Услуга</li>
-                                <li><i class="icon-ok"></i>Услуга</li>
-                                <li><i class="icon-ok"></i>Услуга</li>
-                                <li><i class="icon-ok"></i>Услуга</li>
-                                <li><i class="icon-ok"></i>Услуга</li>
+                                <li><i class="icon-ok"></i>Маникюр без покрытия</li>
+                                <li><i class="icon-ok"></i>Маникюр с покерытием гель лака</li>
+                                <li><i class="icon-ok"></i>Маникюр мужской</li>
+                                <li><i class="icon-ok"></i>Дизайн</li>
+                                <li><i class="icon-ok"></i>Наращивание ногтей</li>
+                                <li><i class="icon-ok"></i>Парафинотерапия рук</li>
+                                <li><i class="icon-ok"></i>Педикюр</li>
                             </ul>
                             <p class="content-item__text">Какой-то текст Lorem ipsum dolor sit amet consectetur
                                 adipisicing elit. Aspernatur at deleniti eveniet maiores beatae optio quas possimus
@@ -240,35 +217,23 @@
                         </div>
                         <div class="tabs-content__item">
                             <div class="content-item__img" style="background-image: url(img/service1.jpg);"></div>
-                            <p class="h3">Виды парикмахерских услуг</p>
+                            <p class="h3">Косметология</p>
                             <p class="h4">
-                                Парикмахерские услуги включают в себя:
+                                Косметология включает в себя:
                             </p>
                             <ul>
-                                <li><i class="icon-ok"></i>Услуга</li>
-                                <li><i class="icon-ok"></i>Услуга</li>
-                                <li><i class="icon-ok"></i>Услуга</li>
-                                <li><i class="icon-ok"></i>Услуга</li>
-                                <li><i class="icon-ok"></i>Услуга</li>
-                                <li><i class="icon-ok"></i>Услуга</li>
-                            </ul>
-                            <p class="content-item__text">Какой-то текст Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Aspernatur at deleniti eveniet maiores beatae optio quas possimus
-                                commodi molestiae quasi!</p>
-                        </div>
-                        <div class="tabs-content__item">
-                            <div class="content-item__img" style="background-image: url(img/service1.jpg);"></div>
-                            <p class="h3">Виды парикмахерских услуг</p>
-                            <p class="h4">
-                                Парикмахерские услуги включают в себя:
-                            </p>
-                            <ul>
-                                <li><i class="icon-ok"></i>Услуга</li>
-                                <li><i class="icon-ok"></i>Услуга</li>
-                                <li><i class="icon-ok"></i>Услуга</li>
-                                <li><i class="icon-ok"></i>Услуга</li>
-                                <li><i class="icon-ok"></i>Услуга</li>
-                                <li><i class="icon-ok"></i>Услуга</li>
+                                <li><i class="icon-ok"></i>Биоревитализация</li>
+                                <li><i class="icon-ok"></i>Мезотерапия</li>
+                                <li><i class="icon-ok"></i>Ботокс</li>
+                                <li><i class="icon-ok"></i>Филлер </li>
+                                <li><i class="icon-ok"></i>Постановка нитей</li>
+                                <li><i class="icon-ok"></i>Чистка</li>
+                                <li><i class="icon-ok"></i>Уходы</li>
+                                <li><i class="icon-ok"></i>Массаж тела</li>
+                                <li><i class="icon-ok"></i>Шугаринг</li>
+                                <li><i class="icon-ok"></i>Электроэпиляция</li>
+                                <li><i class="icon-ok"></i>Массаж лица</li>
+                                <li><i class="icon-ok"></i>Перманентный макияж</li>
                             </ul>
                             <p class="content-item__text">Какой-то текст Lorem ipsum dolor sit amet consectetur
                                 adipisicing elit. Aspernatur at deleniti eveniet maiores beatae optio quas possimus
@@ -296,6 +261,9 @@
                                 <li><i class="icon-ok"></i>Уходовые процедуры</li>
                                 <li><i class="icon-ok"></i>Биозавивка волос</li>
                                 <li><i class="icon-ok"></i>Продажа косметики для волос</li>
+                                <li><i class="icon-ok"></i>ламинирование бровей и ресниц</li>
+                                <li><i class="icon-ok"></i>Окрашивание и корекция бровей</li>
+                                <li><i class="icon-ok"></i>Наращивание ресниц</li>
                             </ul>
                             <p class="content-item__text">Наши специалисты готовы воплотить все ваши мечты, любые виды
                                 мужских и женских стрижек, укладок и причесок разные виды окрашивания такие как простые,
@@ -306,44 +274,21 @@
                     </div>
                     <div class="accordion-item">
                         <div class="accordion-item__header">
-                            Брови, макияж, ресницы
-                        </div>
-                        <div class="accordion-item__content">
-                            <div class="content-item__img" style="background-image: url(img/service3.jpg);"></div>
-                            <p class="h3">Наш салон </p>
-                            <p class="h4">
-                                Парикмахерские услуги включают в себя:
-                            </p>
-                            <ul>
-                                <li><i class="icon-ok"></i>Услуга</li>
-                                <li><i class="icon-ok"></i>Услуга</li>
-                                <li><i class="icon-ok"></i>Услуга</li>
-                                <li><i class="icon-ok"></i>Услуга</li>
-                                <li><i class="icon-ok"></i>Услуга</li>
-                                <li><i class="icon-ok"></i>Услуга</li>
-                            </ul>
-                            <p class="content-item__text">Какой-то текст Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Aspernatur at deleniti eveniet maiores beatae optio quas possimus
-                                commodi molestiae quasi!</p>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <div class="accordion-item__header">
                             Ногтевой сервис
                         </div>
                         <div class="accordion-item__content">
                             <div class="content-item__img" style="background-image: url(img/service4.jpg);"></div>
-                            <p class="h3">Любые виды парикмахерских услуг</p>
                             <p class="h4">
-                                Парикмахерские услуги включают в себя:
+                                Ногтевой сервис включает в себя:
                             </p>
                             <ul>
-                                <li><i class="icon-ok"></i>Услуга</li>
-                                <li><i class="icon-ok"></i>Услуга</li>
-                                <li><i class="icon-ok"></i>Услуга</li>
-                                <li><i class="icon-ok"></i>Услуга</li>
-                                <li><i class="icon-ok"></i>Услуга</li>
-                                <li><i class="icon-ok"></i>Услуга</li>
+                                <li><i class="icon-ok"></i>Маникюр без покрытия</li>
+                                <li><i class="icon-ok"></i>Маникюр с покерытием гель лака</li>
+                                <li><i class="icon-ok"></i>Маникюр мужской</li>
+                                <li><i class="icon-ok"></i>Дизайн</li>
+                                <li><i class="icon-ok"></i>Наращивание ногтей</li>
+                                <li><i class="icon-ok"></i>Парафинотерапия рук</li>
+                                <li><i class="icon-ok"></i>Педикюр</li>
                             </ul>
                             <p class="content-item__text">Какой-то текст Lorem ipsum dolor sit amet consectetur
                                 adipisicing elit. Aspernatur at deleniti eveniet maiores beatae optio quas possimus
@@ -358,38 +303,21 @@
                             <div class="content-item__img" style="background-image: url(img/service2.jpg);"></div>
                             <p class="h3">Любые виды парикмахерских услуг</p>
                             <p class="h4">
-                                Парикмахерские услуги включают в себя:
+                                ПКосметология включает в себя:
                             </p>
                             <ul>
-                                <li><i class="icon-ok"></i>Услуга</li>
-                                <li><i class="icon-ok"></i>Услуга</li>
-                                <li><i class="icon-ok"></i>Услуга</li>
-                                <li><i class="icon-ok"></i>Услуга</li>
-                                <li><i class="icon-ok"></i>Услуга</li>
-                                <li><i class="icon-ok"></i>Услуга</li>
-                            </ul>
-                            <p class="content-item__text">Какой-то текст Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Aspernatur at deleniti eveniet maiores beatae optio quas possimus
-                                commodi molestiae quasi!</p>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <div class="accordion-item__header">
-                            Массаж, шугаринг
-                        </div>
-                        <div class="accordion-item__content">
-                            <div class="content-item__img" style="background-image: url(img/service1.jpg);"></div>
-                            <p class="h3">Любые виды парикмахерских услуг</p>
-                            <p class="h4">
-                                Парикмахерские услуги включают в себя:
-                            </p>
-                            <ul>
-                                <li><i class="icon-ok"></i>Услуга</li>
-                                <li><i class="icon-ok"></i>Услуга</li>
-                                <li><i class="icon-ok"></i>Услуга</li>
-                                <li><i class="icon-ok"></i>Услуга</li>
-                                <li><i class="icon-ok"></i>Услуга</li>
-                                <li><i class="icon-ok"></i>Услуга</li>
+                                <li><i class="icon-ok"></i>Биоревитализация</li>
+                                <li><i class="icon-ok"></i>Мезотерапия</li>
+                                <li><i class="icon-ok"></i>Ботокс</li>
+                                <li><i class="icon-ok"></i>Филлер </li>
+                                <li><i class="icon-ok"></i>Постановка нитей</li>
+                                <li><i class="icon-ok"></i>Чистка</li>
+                                <li><i class="icon-ok"></i>Уходы</li>
+                                <li><i class="icon-ok"></i>Массаж тела</li>
+                                <li><i class="icon-ok"></i>Шугаринг</li>
+                                <li><i class="icon-ok"></i>Электроэпиляция</li>
+                                <li><i class="icon-ok"></i>Массаж лица</li>
+                                <li><i class="icon-ok"></i>Перманентный макияж</li>
                             </ul>
                             <p class="content-item__text">Какой-то текст Lorem ipsum dolor sit amet consectetur
                                 adipisicing elit. Aspernatur at deleniti eveniet maiores beatae optio quas possimus
@@ -409,7 +337,7 @@
     <section class="ourTeam container">
         <div class="ourTeam-container container-fluid">
             <div class="ourTeam-container__text">
-                <h2>
+                <h2 id="ourTeam">
                     Наша команда
                 </h2>
                 <div class="ourTeam-text__content">Наши специалисты по расширению знаний являются лучшими в своем деле и
@@ -424,7 +352,7 @@
 
 
 
-    <section class="map container">
+    <section class="map container" id="map">
         <div class="map-container">
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1332.9964298284694!2d37.90412333725659!3d48.071780733912156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40e08f1f6141c901%3A0x2dd6b50e881c2d01!2zItCh0L7RhNC4Ig!5e0!3m2!1sru!2sua!4v1615741071466!5m2!1sru!2sua"
@@ -434,20 +362,20 @@
 
 
 
-    <section class="contact container">
+    <section class="contact container" id="contact">
         <div class="contact-container container-fluid">
             <div class="contact-container__details">
-                <h4>Contact Details</h4>
+                <h4>Контактная информация</h4>
                 <div class="details-box"><i class="icon-map"></i>
-                    <p>470 Lucy Forks, Patriciafurt, YC7B 3UT</p>
+                    <p>г.Макеевка, ул. Кокинаки, 60/9</p>
                 </div>
-                <div class="details-box"><i class="icon-phone"></i><a href="tel:1234567890" data-action="call"
-                        class="moto-link">(123) 123-7899</a></div>
-                <div class="details-box"><i class="icon-post"></i><a href="mailto:mail@demolink.org" data-action="mail"
-                        class="moto-link">Email: mail@demolink.org</a></div>
+                <div class="details-box"><i class="icon-phone"></i><a href="tel:0713133821" data-action="call"
+                        class="moto-link">(071) 313-3821</a></div>
+                <div class="details-box"><i class="icon-post"></i><a href="mailto:sofi.dn.ua@gmail.com" data-action="mail"
+                        class="moto-link">Почта: sofi.dn.ua@gmail.com</a></div>
             </div>
             <div class="contact-container__git">
-                <h4>Get In Touch</h4>
+                <h4>Свяжитесь с нами</h4>
                 <form method="post" class="container-git__form">
                     <input id="name" type="name" placeholder="Имя *" name="Name" required maxlength="50">
                     <input id="email" type="email" placeholder="Почта *" name="Email" required maxlength="50">
@@ -468,43 +396,38 @@
                 <div class="nav-logo">
                     <a href="">Софи</a>
                 </div>
-                <p class="footer-box__text">We provide hair extensions with advanced techniques to give you the
-                    beautiful look you want. Our extension experts are the best in the business and have a combined
-                    professional experience of over 10 years.</p>
+                <p class="footer-box__text">Наш путь к профессиональному росту был долгий. Но и я смогла собрать команду, где мастера, жаждущие обучения, вышли на высокий уровень.Конкурсы в Киеве с занятыми 1-2 местами. Затем Москва МК Сарбашев Владимир, Игорь Хонин, Павел Шеф.М теперь мы смело можем сказать, что готовы создать лучшую версию себя для наших клиентов.</p>
                 <div class="footer-icons">
-                    <i class="icon-vkontakte"></i>
-                    <i class="icon-instagram"></i>
-                    <i class="icon-facebook"></i>
+                    <span><a target="_blank" href="https://www.instagram.com/sofi_beauty_dn/?hl=ru"><i class="icon-instagram"></i></a></span>
+                    <span><a target="_blank" href="https://vk.com/salon.sofi_makeevka"><i class="icon-vkontakte"></i></a></span>
+                    <span><a target="_blank" href=""><i class="icon-facebook"></i></a></span>
                 </div>
             </div>
             <div class="footer-box">
-                <div class="heading">Contact Us</div>
+                <div class="heading">Контакты</div>
                 <div class="content"><i class="icon-location"></i><span>
-                        <p>1010 Avenue of the Moon,</p>
-                        <p> New York, NY 10018 US.</p>
+                        <p>г.Макеевка, ул. Кокинаки, 60/9</p>
                     </span></div>
                 <div class="content"><i class="icon-clock"></i><span>
-                        <p>Mon - Sat 8.00 - 18.00.</p>
-                        <p>Sunday CLOSED</p>
+                        <p>Пн - Сб: 8:00 - 18:00</p>
+                        <p>Вс: 8:00 - 17:00</p>
                     </span></div>
-                <div class="content"><i class="icon-phone"></i><a href="tel:1234567890" data-action="call"
-                        class="moto-link">800-2345-6789</a></div>
+                <div class="content"><i class="icon-phone"></i><a href="tel:0713133821" data-action="call"
+                        class="moto-link">(071) 313-3821</a></div>
             </div>
         </div>
 
         <div class="footer-bottom">
-              <div class="container-fluid">
-                <p class="moto-text_218">Copyright © 2019 &nbsp; &nbsp;Privacy Policy</p>
-              </div>
+            <div class="container-fluid">
+                <p class="moto-text_218">Copyright © <span id="year"></span> &nbsp; &nbsp;Privacy Policy</p>
+            </div>
         </div>
     </footer>
 
-<!-- 123 -->
+    <!-- 123 -->
 
     <script src="js/script.js"></script>
 
 </body>
 
 </html>
-
-

@@ -149,3 +149,10 @@ function clickOutside(e) {
     modal.style.display = 'none';
   }
 } // end
+//taer 
+
+
+var today = new Date();
+var year = today.getFullYear();
+var yearBox = document.querySelector('#year');
+yearBox.innerHTML = year;

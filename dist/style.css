@@ -102,7 +102,7 @@ h4 {
   cursor: pointer;
 }
 
-.text-p, .footer .footer-bottom p, .footer .footer-container .footer-box .content p, .footer .footer-container .footer-box .content a, .footer .footer-container .footer-box .footer-box__text, .contact .contact-container .contact-container__details .details-box p, .contact .contact-container .contact-container__details .details-box a, .contact .contact-container .contact-container__details .details-box i, .ourTeam .ourTeam-container .ourTeam-container__text .ourTeam-text__content, .ourServices .ourServices-container .ourServices-container__content .tabs .tabs-content .tabs-content__item .content-item__text, .ourServices .ourServices-container .ourServices-container__content .tabs .tabs-content .tabs-content__item ul li, .ourServices .ourServices-container .ourServices-container__content .accordion .accordion-item .accordion-item__content .h4, .ourServices .ourServices-container .ourServices-container__content .accordion .accordion-item .accordion-item__content .h3, .ourServices .ourServices-container .ourServices-container__content .accordion .accordion-item .accordion-item__content .content-item__text, .ourServices .ourServices-container .ourServices-container__content .accordion .accordion-item .accordion-item__content ul li, .ourServices .ourServices-container .ourServices-container__top p, .benefist .benefist-container .benefist-container__right .benefist-right__list li, .aboutUs .aboutUs-main .aboutUs-main__text {
+.text-p, .footer .footer-bottom p, .footer .footer-container .content p, .footer .footer-container .content a, .footer .footer-container .footer-box .footer-box__text, .contact .contact-container .contact-container__details .details-box p, .contact .contact-container .contact-container__details .details-box a, .contact .contact-container .contact-container__details .details-box i, .ourTeam .ourTeam-container .ourTeam-container__text .ourTeam-text__content, .ourServices .ourServices-container .ourServices-container__content .tabs .tabs-content .tabs-content__item .content-item__text, .ourServices .ourServices-container .ourServices-container__content .tabs .tabs-content .tabs-content__item ul li, .ourServices .ourServices-container .ourServices-container__content .accordion .accordion-item .accordion-item__content .h4, .ourServices .ourServices-container .ourServices-container__content .accordion .accordion-item .accordion-item__content .h3, .ourServices .ourServices-container .ourServices-container__content .accordion .accordion-item .accordion-item__content .content-item__text, .ourServices .ourServices-container .ourServices-container__content .accordion .accordion-item .accordion-item__content ul li, .ourServices .ourServices-container .ourServices-container__top p, .benefist .benefist-container .benefist-container__right .benefist-right__list li, .aboutUs .aboutUs-main .aboutUs-main__text {
   font-weight: 300;
   font-style: normal;
   font-family: "Montserrat", sans-serif;
@@ -162,6 +162,7 @@ h4 {
 * {
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
 
 *,
@@ -1310,23 +1311,33 @@ ul {
     margin-bottom: 15px;
   }
 }
-.footer .footer-container .footer-box .footer-icons i {
-  font-size: 0.9em;
-  margin: 5px;
-  padding: 0.2em;
+.footer .footer-container .footer-box .footer-icons span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.5rem;
+  height: 1.5rem;
   background-color: #ffffff;
-  border-radius: 100%;
+  margin: 5px;
+  border-radius: 50%;
   transition: ease 0.5s;
+  cursor: pointer;
 }
 @media screen and (max-width: 695px) {
-  .footer .footer-container .footer-box .footer-icons i {
+  .footer .footer-container .footer-box .footer-icons span {
+    width: 3rem;
+    height: 3rem;
     font-size: 2em;
   }
 }
-.footer .footer-container .footer-box .footer-icons i:hover {
+.footer .footer-container .footer-box .footer-icons span:hover {
   background-color: #bb9151;
 }
-.footer .footer-container .footer-box .heading {
+.footer .footer-container .footer-box .footer-icons span i {
+  color: #282828;
+  font-size: 0.9em;
+}
+.footer .footer-container .heading {
   font-weight: 600;
   font-style: normal;
   font-family: "Montserrat", sans-serif;
@@ -1335,19 +1346,19 @@ ul {
   line-height: 1.2;
   letter-spacing: 2px;
 }
-.footer .footer-container .footer-box .content {
+.footer .footer-container .content {
   display: flex;
 }
-.footer .footer-container .footer-box .content i {
+.footer .footer-container .content i {
   position: relative;
   top: 2px;
   color: #bb9151;
   padding: 0 15px;
 }
-.footer .footer-container .footer-box .content a {
+.footer .footer-container .content a {
   color: #bb9151;
 }
-.footer .footer-container .footer-box .content p {
+.footer .footer-container .content p {
   color: #ffffff;
   font-size: 16px;
 }
@@ -1408,11 +1419,6 @@ ul {
   margin-bottom: 20px;
   font-size: 2vmax;
   text-align: center;
-}
-@media screen and (max-width: 695px) {
-  .modal-content h4 {
-    font-size: 1.5vmax;
-  }
 }
 .modal-content .closeBtn {
   color: #ccc;
