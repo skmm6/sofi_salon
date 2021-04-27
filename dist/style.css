@@ -86,7 +86,7 @@ h4 {
   border-bottom: 2px solid #ffffff;
 }
 
-.btn, .modal-content__form button, .contact .contact-container .contact-container__git button, .benefist .benefist-container .benefist-container__left a, .aboutUs .aboutUs-contact .aboutUs-contact__boxitem .forms .reused_form .button-primary, .bilbord .bilbord-main .bilbord-main__flex .bilbord-main__btn button, .header .nav-end .nav-bnt button {
+.btn, .modal-content__form button, .contact .contact-container .contact-container__git button, .ourServices .ourServices-container .ourServices-container__content .tabs .tabs-content .tabs-content__item button, .ourServices .ourServices-container .ourServices-container__content .accordion .accordion-item .accordion-item__content button, .benefist .benefist-container .benefist-container__left a, .aboutUs .aboutUs-contact .aboutUs-contact__boxitem .forms .reused_form .button-primary, .bilbord .bilbord-main .bilbord-main__flex .bilbord-main__btn button, .header .nav-end .nav-bnt button {
   offset: none;
   border: 2px solid #bb9151;
   font-size: 12px;
@@ -957,6 +957,14 @@ ul {
   /* display: none; */
   overflow: hidden;
 }
+.ourServices .ourServices-container .ourServices-container__content .accordion .accordion-item .accordion-item__content button {
+  padding: 15px 20px;
+  text-transform: uppercase;
+}
+.ourServices .ourServices-container .ourServices-container__content .accordion .accordion-item .accordion-item__content button:hover {
+  color: #ffffff;
+  background-color: #bb9151;
+}
 .ourServices .ourServices-container .ourServices-container__content .accordion .accordion-item .accordion-item__content ul {
   padding: 0;
 }
@@ -1070,6 +1078,14 @@ ul {
 .ourServices .ourServices-container .ourServices-container__content .tabs .tabs-content .tabs-content__item ul li i {
   font-size: 1.2em;
   color: #bb9151;
+}
+.ourServices .ourServices-container .ourServices-container__content .tabs .tabs-content .tabs-content__item button {
+  padding: 15px 20px;
+  text-transform: uppercase;
+}
+.ourServices .ourServices-container .ourServices-container__content .tabs .tabs-content .tabs-content__item button:hover {
+  color: #ffffff;
+  background-color: #bb9151;
 }
 .ourServices .ourServices-container .ourServices-container__content .tabs .tabs-content .tabs-content__item.active {
   display: block;

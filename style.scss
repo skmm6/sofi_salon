@@ -838,6 +838,15 @@
                         transition: .3s ease;
                         /* display: none; */
                         overflow: hidden;
+                        button {
+                            @extend .btn;
+                            padding: 15px 20px;
+                            text-transform: uppercase;
+                            &:hover {
+                                color: $light;
+                                background-color: $primory;
+                            }
+                        }
                         ul {
                             padding: 0;
                             li {
@@ -922,6 +931,7 @@
                                 display: inline-block;
                                 cursor: pointer;
                                 transition: .4s ease;
+                                
                             &.active{
                                 background-color: $primory;
                                 color: $light;
@@ -958,6 +968,15 @@
                                         font-size: 1.2em;
                                         color: $primory;
                                     }
+                                }
+                            }
+                            button {
+                                @extend .btn;
+                                padding: 15px 20px;
+                                text-transform: uppercase;
+                                &:hover {
+                                    color: $light;
+                                    background-color: $primory;
                                 }
                             }
                             .content-item__text{

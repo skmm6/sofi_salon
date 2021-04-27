@@ -114,9 +114,9 @@
                 <div class="aboutUs-contact__boxitem">
                     <p class="text">Обратный звонок</p>
                     <div class="forms">
-                        <form method="post" class="reused_form">
-                            <input id="name" type="text" placeholder="Телефон *" name="Name" required maxlength="50">
-                            <input id="email" type="email" placeholder="Почта *" name="Email" required maxlength="50">
+                        <form action="./mailphone.php" method="post" class="reused_form">
+                            <input id="phone" type="phone" placeholder="Телефон *" name="phone" required maxlength="50">
+                            <input id="email" type="email" placeholder="Почта *" name="email" required maxlength="50">
                             <button class="button-primary" type="submit">Отправить</button>
                         </form>
                     </div>
@@ -160,8 +160,6 @@
             <div class="ourServices-container__top">
                 <h3 id="ourServicess">Что мы делаем</h3>
                 <h2>Наши услуги</h2>
-                <p>Получите молодое, модное, потрясающее наращивание волос. Хорошая внешность только заставит вас
-                    почувствовать себя лучше</p>
             </div>
             <div class="ourServices-container__content">
                 <div class="tabs">
@@ -190,11 +188,7 @@
                                 <li><i class="icon-ok"></i>Окрашивание и корекция бровей</li>
                                 <li><i class="icon-ok"></i>Наращивание ресниц</li>
                             </ul>
-                            <p class="content-item__text">Наши специалисты готовы воплотить все ваши мечты, любые виды
-                                мужских и женских стрижек, укладок и причесок разные виды окрашивания такие как простые,
-                                сложные, а так же выход из черного цвета, биозавивка волос. Но не забываем и про
-                                здоровье волос, вы сможете заказать процедуру лечения и восстановление волос. Для ухода
-                                в продаже имеется косметика для волос.</p>
+                            <button id="modalBtn" href="#"><span>Заказать звонок</span></button>
                         </div>
                         <div class="tabs-content__item">
                             <div class="content-item__img" style="background-image: url(img/DSC_0870.jpg);"></div>
@@ -211,9 +205,7 @@
                                 <li><i class="icon-ok"></i>Парафинотерапия рук</li>
                                 <li><i class="icon-ok"></i>Педикюр</li>
                             </ul>
-                            <p class="content-item__text">Какой-то текст Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Aspernatur at deleniti eveniet maiores beatae optio quas possimus
-                                commodi molestiae quasi!</p>
+                            <button id="modalBtn" href="#"><span>Заказать звонок</span></button>
                         </div>
                         <div class="tabs-content__item">
                             <div class="content-item__img" style="background-image: url(img/service1.jpg);"></div>
@@ -235,9 +227,7 @@
                                 <li><i class="icon-ok"></i>Массаж лица</li>
                                 <li><i class="icon-ok"></i>Перманентный макияж</li>
                             </ul>
-                            <p class="content-item__text">Какой-то текст Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Aspernatur at deleniti eveniet maiores beatae optio quas possimus
-                                commodi molestiae quasi!</p>
+                            <button id="modalBtn" href="#"><span>Заказать звонок</span></button>
                         </div>
                     </div>
                 </div>
@@ -265,11 +255,7 @@
                                 <li><i class="icon-ok"></i>Окрашивание и корекция бровей</li>
                                 <li><i class="icon-ok"></i>Наращивание ресниц</li>
                             </ul>
-                            <p class="content-item__text">Наши специалисты готовы воплотить все ваши мечты, любые виды
-                                мужских и женских стрижек, укладок и причесок разные виды окрашивания такие как простые,
-                                сложные, а так же выход из черного цвета, биозавивка волос. Но не забываем и про
-                                здоровье волос, вы сможете заказать процедуру лечения и восстановление волос. Для ухода
-                                в продаже имеется косметика для волос.</p>
+                            <button id="modalBtn" href="#"><span>Заказать звонок</span></button>
                         </div>
                     </div>
                     <div class="accordion-item">
@@ -290,9 +276,7 @@
                                 <li><i class="icon-ok"></i>Парафинотерапия рук</li>
                                 <li><i class="icon-ok"></i>Педикюр</li>
                             </ul>
-                            <p class="content-item__text">Какой-то текст Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Aspernatur at deleniti eveniet maiores beatae optio quas possimus
-                                commodi molestiae quasi!</p>
+                            <button id="modalBtn" href="#"><span>Заказать звонок</span></button>
                         </div>
                     </div>
                     <div class="accordion-item">
@@ -319,9 +303,7 @@
                                 <li><i class="icon-ok"></i>Массаж лица</li>
                                 <li><i class="icon-ok"></i>Перманентный макияж</li>
                             </ul>
-                            <p class="content-item__text">Какой-то текст Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Aspernatur at deleniti eveniet maiores beatae optio quas possimus
-                                commodi molestiae quasi!</p>
+                            <button id="modalBtn" href="#"><span>Заказать звонок</span></button>
                         </div>
                     </div>
 
@@ -333,7 +315,7 @@
 
     </section>
 
-
+<!-- 
     <section class="ourTeam container">
         <div class="ourTeam-container container-fluid">
             <div class="ourTeam-container__text">
@@ -347,7 +329,7 @@
             <div class="ourTeam-container__img"></div>
         </div>
 
-    </section>
+    </section> -->
 
 
 
@@ -376,9 +358,9 @@
             </div>
             <div class="contact-container__git">
                 <h4>Свяжитесь с нами</h4>
-                <form method="post" class="container-git__form">
-                    <input id="name" type="name" placeholder="Имя *" name="Name" required maxlength="50">
-                    <input id="email" type="email" placeholder="Почта *" name="Email" required maxlength="50">
+                <form action="./namePhoneMail.php" method="post" class="container-git__form">
+                    <input id="name" type="name" placeholder="Имя *" name="name" required maxlength="50">
+                    <input id="email" type="email" placeholder="Почта *" name="email" required maxlength="50">
                     <input id="phone" type="phone" placeholder="Телефон *" name="phone" maxlength="50">
                     <input id="text" type="text" placeholder="Сообщение *" name="text" required maxlength="200">
                     <button class="button-primary" type="submit">Отправить</button>
