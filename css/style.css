@@ -149,12 +149,25 @@ h4 {
 }
 
 #scrollup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: fixed;
   bottom: 2rem;
-  right: 1.5rem;
+  right: 2rem;
   background-color: #bb9151;
-  padding: 2rem;
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
+  font-size: 1.4rem;
+  font-weight: bold;
+  opacity: 0.5;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  color: #282828;
+}
+#scrollup:hover {
+  opacity: 1;
 }
 
 :root {
@@ -1501,3 +1514,5 @@ ul {
   background-color: #ffffff;
   color: #282828;
 }
+
+/*# sourceMappingURL=style.css.map */

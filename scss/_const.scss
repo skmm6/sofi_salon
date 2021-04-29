@@ -1,0 +1,192 @@
+
+// colors
+$primory: #bb9151 ;
+$text-black: #282828;
+$light: #ffffff;    
+
+
+// fontfamaly
+$text-ff__1: 'Montserrat', sans-serif ;
+$text-ff__2: 'Pacifico', cursive;
+
+
+//size
+
+$text-s: 12px;
+$text-m: 14px;
+$text-l: 16px;
+$text-x: 50px;
+$text-xl: 64px;
+
+
+// h1 - h6 
+
+h1 {
+    font-weight: 600;
+    font-style: normal;
+    font-family: $text-ff__1;
+    color: $light;
+    font-size: $text-xl;
+    line-height: 1.2;
+    letter-spacing: 0px;
+}
+
+h2 {
+    font-weight: 700;
+    font-style: normal;
+    font-family: $text-ff__1;
+    color: $text-black;
+    font-size: $text-xl;
+    line-height: 1.2;
+    letter-spacing: 1px;
+}
+
+h3 {
+    font-weight: 700;
+    font-style: normal;
+    font-family: 'Montserrat', sans-serif;
+    color: #bb9151;
+    font-size: 1.1em;
+    line-height: 1.4;
+    letter-spacing: 3px;
+}
+
+h4{
+    font-weight: 700;
+    font-style: normal;
+    font-family: $text-ff__1;
+    color: $text-black;
+    font-size: 40px;
+    line-height: 1.2;
+    letter-spacing: 2px;
+}
+.h3 {
+    font-weight: 600;
+    font-style: normal;
+    font-family: $text-ff__1;
+    color: $text-black;
+    font-size: 26px;
+    line-height: 1.4;
+    letter-spacing: 0px;
+}
+.h4 {
+    font-weight: 500;
+    font-style: normal;
+    font-family: $text-ff__1;
+    color: $text-black;
+    font-size: 18px;
+    line-height: 1.4;
+    letter-spacing: 0px;
+}
+
+
+//container-teg
+.container {
+    max-width: 100%;
+}
+
+.container-fluid {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.links {
+    color: $text-black;
+    font-family: $text-ff__1;
+    font-weight: 500;
+    font-style: normal;
+    font-size: $text-s;
+    line-height: 20px;
+    position: relative;
+    display: block;
+    text-align: left;
+    transition: .3s ease;
+    z-index: 1;
+    border-bottom: 2px solid $light;
+}
+
+.btn {
+    offset: none;
+    border: 2px solid $primory;
+    font-size: $text-s;
+    font-family: $text-ff__1;
+    font-weight: 500;
+    font-style: normal;
+    color: $text-black;
+    background-color: transparent;
+    line-height: 20px;
+    text-align: center;
+    transition: ease .3s;
+    letter-spacing: .5px;
+    cursor: pointer;
+}
+
+.text-p {
+    font-weight: 300;
+    font-style: normal;
+    font-family: $text-ff__1;
+    color: $text-black;
+    font-size: $text-l;
+    line-height: 1.5;
+    letter-spacing: 0px;
+}
+
+.abaut-form {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        background-size: cover;
+        background-position: center;
+        flex-basis: 33%
+}
+
+.nav-logos {
+    width: 100%;
+    flex-grow: 2;
+    padding: 15px 0;
+    max-width: 15%;
+    text-align: center;
+
+    a {
+        text-align: center;
+        font-size: 70px;
+        color: $text-black;
+
+        @media screen and (max-width: 1039px) {
+            font-size: 50px;
+        }
+    }
+
+    @media screen and (max-width: 695px) {
+        max-width: 100%;
+        text-align: center;
+
+        a {
+            font-size: 80px;
+        }
+    }
+}
+
+
+ #scrollup {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     position: fixed;
+     bottom: 2rem;
+     right: 2rem;
+     background-color: $primory;
+     width: 60px;
+     height: 60px;
+     border-radius: 50%;
+     font-size: 1.4rem;
+     font-weight: bold;
+     opacity: .5;
+     transition: all .3s ease;
+     cursor: pointer;
+    color: #282828;
+     &:hover {
+         opacity: 1;
+     }
+ }
